@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+:root {
+  background-color: #F5F5F5;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px; }
+
+body {
+  background-color: #F5F5F5;
+  margin: 0; }
+
+h1 {
+  color: purple; }

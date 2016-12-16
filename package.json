@@ -1,0 +1,17 @@
+{
+  "name": "jekyll-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple site setup using jekyll, Gulp, Sass, pug, Autoprefixer and BrowserSync.",
+  "main": "gulpfile.js",
+  "author": "Donnie Ray Crisp",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-pug": "^3.0.3",
+    "gulp-sass": "^2.3.1",
+    "gulp-scss": "^1.4.0",
+    "gulp-util": "^3.0.7"
+  }
+}

@@ -1,0 +1,10 @@
+:root {
+  background-color: map-get($shades-of-grey, 'light');
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: map-get($shades-of-grey, 'light');
+  margin: 0;
+}
