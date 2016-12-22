@@ -1,0 +1,25 @@
+#sub-nav {
+  .nav {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    width: 100%;
+
+    a {
+      font-size: 1.6rem;
+
+      i {
+        color: #d6d2d3;
+        font-size: 3.2rem;
+        margin-right: 0.8rem;
+      }
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+}

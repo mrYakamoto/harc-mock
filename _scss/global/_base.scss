@@ -1,10 +1,28 @@
 :root {
   background-color: map-get($shades-of-grey, 'light');
+  box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
   background-color: map-get($shades-of-grey, 'light');
   margin: 0;
+}
+
+.section-header {
+  border-bottom: 1px solid gray;
+  margin-bottom: 2rem;
+}
+
+.thumbnail-container {
+  &.label-left-md {
+    img {
+      float: right;
+    }
+  }
 }
