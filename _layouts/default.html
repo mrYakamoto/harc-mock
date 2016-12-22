@@ -3,8 +3,14 @@
   {% include head.html %}
 
   <body>
-    {% include header.html %}
+    {% include navbar-top.html %}
+    {% include sub-nav.html %}
+    {% include callout.html %}
+    {% include carousel.html %}
+
+    {% include content-section.html %}
     {{ content }}
+    {% include footer.html %}
   </body>
-  
+
 </html>

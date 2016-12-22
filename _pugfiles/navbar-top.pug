@@ -1,0 +1,32 @@
+#navbarTop
+    .navbar.navbar-static-top
+      .navbar-inner.row-fluid
+        a.brand.span4(href="#") #[img(src="/assets/images/logo-blue.svg")] &nbsp Learning Hub
+
+        form.input-append.span3
+          input(type="text")
+          button.btn.btn-primary(type="submit")
+            i.icon-search
+
+        .nav-right.span5
+          ul.nav
+            li.flag
+              img(src='/assets/images/US.png')
+            li.welcome-user
+              .welcome-text
+                p Welcome back #[strong Rose Stewart]
+                .dropdown
+                  a.dropdown-toggle(
+                  , data-toggle="dropdown"
+                  , href=""
+                  ) Home Owner
+                    b.caret
+                  ul.dropdown-menu(role="menu")
+                    li(role="presentation")
+                      a(href="#", role="menuitem") Action
+                    li
+                      a(href="#") Another Action
+              img.img-circle(src='http://placehold.it/45x45')
+            li.birdhouse
+              a(href="#")
+                img(src='/assets/images/birdhouse-blue.svg')

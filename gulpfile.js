@@ -17,14 +17,6 @@ const siteRoot      = '_site';
 // =============================================================================
 // Convert SASS to CSS
 // =============================================================================
-//
-// gulp.task('sass', function(){
-//   return gulp.src('_scss/_core.scss')
-//     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-//     .pipe(postcss([ autoprefixer({ browsers: ['last 12 versions'] }) ]))
-//     .pipe(gulp.dest('_site/assets/css'))
-//     .pipe(gulp.dest('assets/css'))
-// });
 
 gulp.task('sass', function () {
     return gulp.src('_scss/core.scss')
@@ -84,7 +76,7 @@ gulp.task('serve', () => {
     }
   });
 
-  gulp.watch('sass/**/*.scss', ['sass']);
+  gulp.watch('_scss/**/*.scss', ['sass']);
   gulp.watch('_pugfiles/**/*.pug', ['pug']);
 });
 

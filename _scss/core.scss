@@ -6,11 +6,17 @@
 @import "global/base";
 
 /////////////////////////////
+//// Partials
+/////////////////////////////
+@import "partials/navbar-top";
+@import "partials/callout";
+@import "partials/carousel";
+@import "partials/sub-nav";
+@import "partials/content-section";
+
+
+/////////////////////////////
 //// Pages
 /////////////////////////////
 @import "index";
 
-
-h1 {
-	color: purple;
-}
