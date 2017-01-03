@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 :root {
-  background-color: #F5F5F5;
+  background-color: #fcfaf8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
@@ -12,7 +12,7 @@
           box-sizing: inherit; }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #fcfaf8;
   margin: 0; }
 
 .section-header {
@@ -22,11 +22,55 @@ body {
 .thumbnail-container.label-left-md img {
   float: right; }
 
+.thumbnail-container {
+  float: left;
+  height: 32.2rem;
+  position: relative; }
+  .thumbnail-container:not(:first-of-type) {
+    margin-left: 1.5rem; }
+  .thumbnail-container .thumbnail-label {
+    background: #296DB8;
+    color: #fff;
+    padding: 1.5rem; }
+    .thumbnail-container .thumbnail-label h3 {
+      text-shadow: none; }
+  .thumbnail-container i {
+    font-size: 5rem;
+    position: absolute;
+    right: 2.8rem;
+    top: 2.2rem; }
+  .thumbnail-container .thumb-link {
+    color: #fff; }
+  .thumbnail-container.label-left-md {
+    height: 32.2rem;
+    width: 57rem; }
+    .thumbnail-container.label-left-md .thumbnail-label {
+      float: right;
+      height: 100%;
+      width: 20.2rem; }
+      .thumbnail-container.label-left-md .thumbnail-label h3 {
+        font-size: 2.2rem;
+        line-height: 2.7rem; }
+    .thumbnail-container.label-left-md img {
+      float: right;
+      height: 32.2rem;
+      width: 36.8rem; }
+  .thumbnail-container.label-bottom-sm {
+    height: 32.2rem;
+    width: 28.4rem; }
+    .thumbnail-container.label-bottom-sm .thumbnail-label {
+      height: 14.7rem; }
+      .thumbnail-container.label-bottom-sm .thumbnail-label h3 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-bottom: 0.4rem; }
+
 #navbarTop .navbar-inner {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fcfaf8;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -190,62 +234,58 @@ body {
     #sub-nav .nav a:hover i {
       color: white; }
 
-#contentSection section {
-  padding-top: 2.5rem; }
-  #contentSection section h2 {
-    color: #296DB8; }
-  #contentSection section .view-more {
-    padding: 3.3rem; }
-    #contentSection section .view-more a {
-      position: relative; }
-      #contentSection section .view-more a i {
-        font-size: 1.8rem;
-        margin-left: 1rem; }
+.content-section:nth-child(even) {
+  background: #f0eeec; }
 
-#contentSection .thumbnail-container {
-  float: left;
-  height: 32.2rem;
-  position: relative; }
-  #contentSection .thumbnail-container:not(:first-of-type) {
-    margin-left: 1.5rem; }
-  #contentSection .thumbnail-container .thumbnail-label {
-    background: #296DB8;
-    color: #fff;
-    padding: 1.5rem; }
-    #contentSection .thumbnail-container .thumbnail-label h3 {
-      text-shadow: none; }
-  #contentSection .thumbnail-container i {
-    font-size: 5rem;
-    position: absolute;
-    right: 2.8rem;
-    top: 2.2rem; }
-  #contentSection .thumbnail-container .thumbnail-cta {
-    color: #fff;
+.content-section section {
+  padding-top: 2.5rem; }
+  .content-section section .row-fluid {
+    margin-bottom: 2.3rem; }
+  .content-section section h2 {
+    color: #296DB8; }
+  .content-section section h3 {
+    font-size: 2rem;
+    line-height: 2.3rem; }
+  .content-section section .thumb-link {
     position: relative; }
-    #contentSection .thumbnail-container .thumbnail-cta::after {
+    .content-section section .thumb-link::after {
       content: '»';
       position: absolute;
-      right: -2.5rem; }
-  #contentSection .thumbnail-container.label-left-md {
-    height: 32.2rem;
-    width: 57rem; }
-    #contentSection .thumbnail-container.label-left-md .thumbnail-label {
-      float: right;
-      height: 100%;
-      width: 20.2rem; }
-      #contentSection .thumbnail-container.label-left-md .thumbnail-label h3 {
-        font-size: 2.2rem;
-        line-height: 2.7rem; }
-    #contentSection .thumbnail-container.label-left-md img {
-      float: right;
-      height: 32.2rem;
-      width: 36.8rem; }
-  #contentSection .thumbnail-container.label-bottom-sm {
-    height: 32.2rem;
-    width: 28.4rem; }
-    #contentSection .thumbnail-container.label-bottom-sm .thumbnail-label {
-      height: 14.7rem; }
-      #contentSection .thumbnail-container.label-bottom-sm .thumbnail-label h3 {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-        margin-bottom: 0.4rem; }
+      right: -1.5rem; }
+
+.content-section .view-more {
+  padding: 3.3rem; }
+  .content-section .view-more a {
+    position: relative; }
+    .content-section .view-more a i {
+      font-size: 1.8rem;
+      margin-left: 1rem; }
+
+.content-section.news-section .news-thumbnail .date {
+  color: #296DB8; }
+
+.content-section.news-section h3 {
+  color: #296DB8; }
+
+.help-center {
+  margin-bottom: 5rem; }
+  .help-center .help-banner {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("http://placebear.com/885/186");
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 18.6rem; }
+    .help-center .help-banner i {
+      font-size: 7rem;
+      height: 7rem;
+      line-height: 7rem;
+      width: 7rem; }
+    .help-center .help-banner h2
+, .help-center .help-banner h4 {
+      color: #fff;
+      font-weight: 100; }
