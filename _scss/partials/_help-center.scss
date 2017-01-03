@@ -1,0 +1,23 @@
+.help-center {
+  margin-bottom: 5rem;
+
+  .help-banner {
+    align-items: center;
+    background-image: url('http://placebear.com/885/186');
+    display: flex;
+    height: 18.6rem;
+
+    i {
+      font-size: 7rem;
+      height: 7rem;
+      line-height: 7rem;
+      width: 7rem;
+    }
+
+    h2
+  , h4 {
+      color: $white;
+      font-weight: 100;
+    }
+  }
+}

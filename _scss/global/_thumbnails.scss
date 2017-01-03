@@ -1,0 +1,67 @@
+.thumbnail-container {
+  float: left;
+  height: 32.2rem;
+  position: relative;
+
+  &:not(:first-of-type) {
+    margin-left: 1.5rem;
+  }
+
+  .thumbnail-label {
+    background: $blue;
+    color: $white;
+    padding: 1.5rem;
+
+    h3 {
+      text-shadow: none;
+    }
+  }
+
+  i {
+    font-size: 5rem;
+    position: absolute;
+    right: 2.8rem;
+    top: 2.2rem;
+  }
+
+  .thumb-link {
+    color: $white;
+  }
+
+  &.label-left-md {
+    height: 32.2rem;
+    width: 57rem;
+
+    .thumbnail-label {
+      float: right;
+      height: 100%;
+      width: 20.2rem;
+
+      h3 {
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+      }
+    }
+
+    img {
+      float: right;
+      height: 32.2rem;
+      width: 36.8rem; 
+    }
+  }
+
+  &.label-bottom-sm {
+    height: 32.2rem;
+    width: 28.4rem;
+
+    .thumbnail-label {
+      height: 14.7rem;
+
+      h3 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-bottom: 0.4rem;
+      }
+    }
+  }
+}

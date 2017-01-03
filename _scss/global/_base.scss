@@ -1,5 +1,5 @@
 :root {
-  background-color: map-get($shades-of-grey, 'light');
+  background-color: map-get($shades-of-grey, 'xtra-light');
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 10px;
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: map-get($shades-of-grey, 'light');
+  background-color: map-get($shades-of-grey, 'xtra-light');
   margin: 0;
 }
 

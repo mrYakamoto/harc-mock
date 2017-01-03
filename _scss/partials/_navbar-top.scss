@@ -2,6 +2,7 @@
 
   .navbar-inner {
     align-items: center;
+    background-color: map-get($shades-of-grey, 'xtra-light');
     display: flex;
     height: 8rem;
   }
