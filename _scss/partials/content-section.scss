@@ -1,30 +1,24 @@
 .content-section {
+  padding-top: 2.5rem;
   &:nth-child(even) {
     background: map-get($shades-of-grey, 'medium');
   }
-  section {
-    padding-top: 2.5rem;
 
-    .row-fluid {
-      margin-bottom: 2.3rem;
-    }
+  .row-fluid {
+    margin-bottom: 2.3rem;
+  }
 
-    h2 {
-      color: $blue;
-    }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
 
-    h3 {
-      font-size: 2rem;
-      line-height: 2.3rem;
-    }
-
-    .thumb-link {
-      position: relative;
-      &::after {
-        content: '»';
-        position: absolute;
-        right: -1.5rem;
-      }
+  .thumb-link {
+    position: relative;
+    &::after {
+      content: '»';
+      position: absolute;
+      right: -1.5rem;
     }
   }
 

@@ -11,6 +11,7 @@ const sass          = require('gulp-sass');
 const postcss       = require('gulp-postcss');
 const pug           = require('gulp-pug');
 const autoprefixer  = require('autoprefixer');
+const rename        = require('gulp-rename');
 
 const siteRoot      = '_site';
 
@@ -37,8 +38,9 @@ gulp.task('sass', function () {
 // =============================================================================
 //
 gulp.task('pug', function(){
-  return gulp.src('_pugfiles/*.pug')
+  return gulp.src('_pugfiles/**/*.pug')
   .pipe(pug({pretty: true}))
+  .pipe(rename({dirname: ''}))
   .pipe(gulp.dest('_includes'));
 });
 
