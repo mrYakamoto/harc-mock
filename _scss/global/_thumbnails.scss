@@ -1,67 +1,160 @@
 .thumbnail-container {
-  float: left;
-  height: 32.2rem;
-  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  height: 32rem;
+  margin-left: 1.5641%;
 
-  &:not(:first-of-type) {
-    margin-left: 1.5rem;
+  &.background- {
+    &blue {
+      .thumbnail-label {
+        background-color: $blue;
+        color: $white;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    &hollow {
+      .thumbnail-label {
+        background-color: transparent;
+        color: $black;
+
+        a {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  &.label-left {
+    flex-direction: row;
+
+    .thumbnail-label {
+      float: left;
+      height: 100%;
+      width: 35%;
+
+      p {
+        flex: 0 1 auto;
+      }
+    }
+
+    .thumbnail-image {
+      float: left;
+      height: 100%;
+      overflow: hidden;
+      width: 65%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &.video {
+    position: relative;
+
+    .thumbnail-image {
+      &::after {
+        color: $white;
+        content: "\e617";
+        display: inline-block;
+        font-family: 'Symbolicons';
+        font-size: 4.2rem;
+        line-height: 1;
+        position: absolute;
+        right: 1.5rem;
+        speak: none;
+        text-decoration: none;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        top: 1.5rem;
+        vertical-align: text-top;
+        white-space: nowrap;
+      }
+    }
   }
 
   .thumbnail-label {
-    background: $blue;
-    color: $white;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
     padding: 1.5rem;
-
-    h3 {
-      text-shadow: none;
-    }
   }
 
-  i {
-    font-size: 5rem;
-    position: absolute;
-    right: 2.8rem;
-    top: 2.2rem;
+  h3 {
+    text-shadow: none;
   }
 
-  .thumb-link {
-    color: $white;
+  p {
+    flex: 1 1 auto;
   }
 
-  &.label-left-md {
-    height: 32.2rem;
-    width: 57rem;
+  a {
 
-    .thumbnail-label {
-      float: right;
-      height: 100%;
-      width: 20.2rem;
-
-      h3 {
-        font-size: 2.2rem;
-        line-height: 2.7rem;
-      }
-    }
-
-    img {
-      float: right;
-      height: 32.2rem;
-      width: 36.8rem; 
-    }
-  }
-
-  &.label-bottom-sm {
-    height: 32.2rem;
-    width: 28.4rem;
-
-    .thumbnail-label {
-      height: 14.7rem;
-
-      h3 {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-        margin-bottom: 0.4rem;
-      }
+    &::after {
+      content: '»';
+      position: relative;
+      left: 0.5rem;
     }
   }
 }
+
+// .thumbnail-container {
+//   position: relative;
+
+//   .thumbnail-label {
+//     background: $blue;
+//     color: $white;
+//     padding: 1.5rem;
+
+//     h3 {
+//       text-shadow: none;
+//     }
+//   }
+
+//   .thumbnail-image {
+//     background-image: url('http://placebear.com/368/322');
+//     background-repeat: no-repeat;
+//     margin: 0;
+//   }
+
+//   i {
+//     font-size: 5rem;
+//     position: absolute;
+//     right: 2.8rem;
+//     top: 2.2rem;
+//   }
+
+//   .thumb-link {
+//     color: $white;
+//   }
+
+//   &.label-left-md {
+//     .thumbnail-label {
+//       float: right;
+//       height: 100%;
+
+//       h3 {
+//         font-size: 2.2rem;
+//         line-height: 2.7rem;
+//       }
+//     }
+
+//     img {
+//       float: right;
+//     }
+//   }
+
+//   &.label-bottom-sm {
+//     .thumbnail-label {
+//       h3 {
+//         font-size: 1.8rem;
+//         line-height: 2.5rem;
+//         margin-bottom: 0.4rem;
+//       }
+//     }
+//   }
+// }

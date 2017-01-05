@@ -36,6 +36,8 @@ body {
   }
 }
 
+
+
 .featured-boxes {
   display: flex;
   margin-bottom: 4.5rem;
@@ -76,10 +78,12 @@ body {
         &::after {
           border-bottom: 1px solid transparentize($white, 0.8);
           content: '';
+          left: 0.8rem;
           margin: 0 auto;
           margin-bottom: 1.5rem;
           margin-top: 0.8rem;
-          width: 70%;
+          position: relative;
+          width: 90%;
         }
       }
 

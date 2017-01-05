@@ -86,10 +86,12 @@ body {
       .featured-boxes .featured-box .inner-box .title::after {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         content: '';
+        left: 0.8rem;
         margin: 0 auto;
         margin-bottom: 1.5rem;
         margin-top: 0.8rem;
-        width: 70%; }
+        position: relative;
+        width: 90%; }
       .featured-boxes .featured-box .inner-box i {
         font-size: 4.5rem;
         height: 4.5rem;
@@ -113,47 +115,93 @@ body {
         color: #fff; }
 
 .thumbnail-container {
-  float: left;
-  height: 32.2rem;
-  position: relative; }
-  .thumbnail-container:not(:first-of-type) {
-    margin-left: 1.5rem; }
-  .thumbnail-container .thumbnail-label {
-    background: #296DB8;
-    color: #fff;
-    padding: 1.5rem; }
-    .thumbnail-container .thumbnail-label h3 {
-      text-shadow: none; }
-  .thumbnail-container i {
-    font-size: 5rem;
-    position: absolute;
-    right: 2.8rem;
-    top: 2.2rem; }
-  .thumbnail-container .thumb-link {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 32rem;
+  margin-left: 1.5641%; }
+  .thumbnail-container.background-blue .thumbnail-label {
+    background-color: #296DB8;
     color: #fff; }
-  .thumbnail-container.label-left-md {
-    height: 32.2rem;
-    width: 57rem; }
-    .thumbnail-container.label-left-md .thumbnail-label {
-      float: right;
+    .thumbnail-container.background-blue .thumbnail-label a {
+      color: #fff; }
+  .thumbnail-container.background-hollow .thumbnail-label {
+    background-color: transparent;
+    color: black; }
+    .thumbnail-container.background-hollow .thumbnail-label a {
+      color: #ffa500; }
+  .thumbnail-container.label-left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .thumbnail-container.label-left .thumbnail-label {
+      float: left;
       height: 100%;
-      width: 20.2rem; }
-      .thumbnail-container.label-left-md .thumbnail-label h3 {
-        font-size: 2.2rem;
-        line-height: 2.7rem; }
-    .thumbnail-container.label-left-md img {
-      float: right;
-      height: 32.2rem;
-      width: 36.8rem; }
-  .thumbnail-container.label-bottom-sm {
-    height: 32.2rem;
-    width: 28.4rem; }
-    .thumbnail-container.label-bottom-sm .thumbnail-label {
-      height: 14.7rem; }
-      .thumbnail-container.label-bottom-sm .thumbnail-label h3 {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-        margin-bottom: 0.4rem; }
+      width: 35%; }
+      .thumbnail-container.label-left .thumbnail-label p {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto; }
+    .thumbnail-container.label-left .thumbnail-image {
+      float: left;
+      height: 100%;
+      overflow: hidden;
+      width: 65%; }
+      .thumbnail-container.label-left .thumbnail-image img {
+        width: 100%; }
+  .thumbnail-container.video {
+    position: relative; }
+    .thumbnail-container.video .thumbnail-image::after {
+      color: #fff;
+      content: "\e617";
+      display: inline-block;
+      font-family: 'Symbolicons';
+      font-size: 4.2rem;
+      line-height: 1;
+      position: absolute;
+      right: 1.5rem;
+      speak: none;
+      text-decoration: none;
+      text-rendering: optimizeLegibility;
+      text-transform: none;
+      top: 1.5rem;
+      vertical-align: text-top;
+      white-space: nowrap; }
+  .thumbnail-container .thumbnail-label {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 1.5rem; }
+  .thumbnail-container h3 {
+    text-shadow: none; }
+  .thumbnail-container p {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+  .thumbnail-container a::after {
+    content: '»';
+    position: relative;
+    left: 0.5rem; }
 
 #navbarTop .navbar-inner {
   -webkit-box-align: center;
@@ -299,6 +347,8 @@ body {
 
 #carouselSection {
   margin-top: 2.5rem; }
+  #carouselSection img {
+    width: 100%; }
 
 #sub-nav {
   margin-bottom: 2.5rem; }
