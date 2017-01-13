@@ -6,46 +6,118 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>jekyll-boilerplate</title>
-  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/ha-bootstrap/2.12.1/css/gt-trav.css" media="screen"/>
-  <link rel="stylesheet" href="/assets/css/gt-responsive.min.css"/>
+
+<!-- GT-Trav -->
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-gt.min.css">
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/gt.min.css">
+  <link href="//csvcus.homeaway.com/rsrcs/ha-bootstrap/2.12.1/css/gt-trav.css" rel="stylesheet" media="screen"/>
+
+<!-- GT-Owner -->
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-gt.min.css">
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/gt.min.css">
+  <link href="//csvcus.homeaway.com/rsrcs/ha-bootstrap/2.12.1/css/gt.css" rel="stylesheet" media="screen">
+
+
+
+<!-- VRBO -->
+<!--   <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-vrbo.min.css">
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/vrbo.min.css">
+  <link href="//csvcus.homeaway.com/rsrcs/ha-bootstrap/2.12.1/css/vrbo.css" rel="stylesheet" media="screen"> -->
+
+
+<!-- VacationRental -->
+<!--   <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-vr.min.css">
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/vr.min.css">
+  <link href="//csvcus.homeaway.com/rsrcs/ha-bootstrap/2.12.1/css/vr.css" rel="stylesheet" media="screen"> -->
+
+
+<!-- Homelidays -->
+<!--   <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-hd.min.css">
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/hd.min.css">
+  <link href="//csvcus.homeaway.com/rsrcs/ha-bootstrap/2.12.1/css/hd.css" rel="stylesheet" media="screen"> -->
+
+
+<!-- OwnersDirect baseline -->
+  <!-- <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-odhr.min.css">
+  <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/odhr.min.css"> -->
+
+
+
+
+
+
+
   <link rel="stylesheet" href="/assets/css/core.css"/>
 </head>
 
+
+
+
+
+
   <body>
       
-<div id="navbarTop">
-  <div class="navbar navbar-static-top">
-    <div class="navbar-inner row-fluid"><a class="brand span4" href="/"><img src="/assets/images/logo-blue.svg"/> &nbsp Learning Hub</a>
-      <form class="input-append span3">
-        <input class="span12" type="text"/>
-        <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display-->
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Search"/>
+        </div>
+        <button class="btn btn-default" type="submit">Submit</button>
       </form>
-      <div class="nav-right span5">
-        <ul class="nav">
-          <li class="flag"><img src="/assets/images/US.png"/></li>
-          <li class="welcome-user">
-            <div class="welcome-text">
-              <p>Welcome back <strong>Rose Stewart</strong></p>
-              <div class="dropdown"><a class="dropdown-toggle" ,="," data-toggle="dropdown" href="">Home Owner<b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li role="presentation"><a href="#" role="menuitem">Action</a></li>
-                  <li><a href="#">Another Action</a></li>
-                </ul>
-              </div>
-            </div><img class="img-circle" src="http://placebear.com/45/45"/>
-          </li>
-          <li class="birdhouse"><a href="#"><img src="/assets/images/birdhouse-blue.svg"/></a></li>
-        </ul>
-      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="flag">
+          <img src="/assets/images/US.png"/>
+        </li>
+
+        <li class="welcome-user">
+          <div class="welcome-text">
+            <p>Welcome back <strong>Rose Stewart</strong></p>
+            <div class="dropdown">
+              <a class="dropdown-toggle" ,="," data-toggle="dropdown" href="">Home Owner<b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation">
+                  <a href="#" role="menuitem">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another Action</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img class="img-circle" src="http://placebear.com/45/45"/>
+        </li>
+
+        <li class="birdhouse">
+          <a href="#">
+            <img src="/assets/images/birdhouse-blue.svg"/>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
+
   
 <div id="sub-nav">
   <div class="navbar navbar-inverse navbar-static-top">
     <div class="navbar-inner">
       <ul class="nav">
-        <li><a href="/become-an-expert"><i class="icon-user"></i> Become An Expert</a></li>
+        <li><a href="/L2-become-an-expert"><i class="icon-user"></i> Become An Expert</a></li>
         <li><a href="#"><i class="icon-dog"></i> Get Inspired</a></li>
         <li><a href="#"><i class="icon-calculator"></i> News & Events</a></li>
         <li><a href="#"><i class="icon-washer"></i> Blog</a></li>
@@ -53,6 +125,7 @@
     </div>
   </div>
 </div>
+
   
 <div class="container">
   <div class="bs-callout bs-callout-warning"><i class="warning-sign icon-alert"></i>
@@ -82,8 +155,8 @@
         <p>Learn the best techniques to rent with the least amount of issues and pain points to become profitable!</p><a href="#">Watch This Video</a>
       </div>
     </div>
-    <div class="span3 thumbnail-container background-hollow video">
-      <div class="thumbnail-image"><img class="video-thumb" src="http://placebear.com/284/174"/></div>
+    <div class="span3 thumbnail-container background-blue video">
+      <div class="thumbnail-image"><img src="http://placebear.com/284/174"/></div>
       <div class="thumbnail-label">
         <h3>Rent With Ease</h3>
         <p>Learn the issues and pain points to become profitable!</p><a href="#">Watch This Video</a>
@@ -212,6 +285,8 @@
   </div>
 </div>
 
+    
+<div id="footer"></div>
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>

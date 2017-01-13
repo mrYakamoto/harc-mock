@@ -36,11 +36,20 @@ body {
   }
 }
 
+section {
+  margin-top: 5rem;
+}
+
+#footer {
+  background-color: map-get($shades-of-grey, 'dark');
+  height: 50rem;
+  margin-top: 8rem;
+  width: 100%;
+}
 
 
 .featured-boxes {
   display: flex;
-  margin-bottom: 4.5rem;
   margin-top: 2rem;
 
   .featured-box {

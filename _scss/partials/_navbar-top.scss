@@ -1,3 +1,15 @@
+
+.navbar-collapse {
+  position: relative;
+
+  form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
 #navbarTop {
 
   .navbar-inner {
@@ -18,11 +30,17 @@
     }
   }
 
-  form {
-    margin-bottom: 0;
+  .search-field {
+    input {
+      border-radius: 0;
+    }
 
-    i {
-      color: white;
+    button {
+      border-radius: 0;
+
+      i {
+        color: white;
+      }
     }
   }
 

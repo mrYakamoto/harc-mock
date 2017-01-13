@@ -1,23 +1,22 @@
 /////////////////////////////
 //// Global
 /////////////////////////////
-@import "global/variables";
-@import "global/typography";
-@import "global/base";
-@import "global/thumbnails";
+@import 'global/variables';
+@import 'global/typography';
+@import 'global/base';
+@import 'global/thumbnails';
 
 /////////////////////////////
 //// Partials
 /////////////////////////////
-@import "partials/navbar-top";
-@import "partials/callout";
-@import "partials/carousel";
-@import "partials/sub-nav";
-@import "partials/content-section";
-@import "partials/help-center";
+@import 'partials/callout';
+@import 'partials/carousel';
+@import 'partials/content-section';
+@import 'partials/help-center';
+@import 'partials/navbar-top';
+@import 'partials/sub-nav';
 
 /////////////////////////////
 //// Pages
 /////////////////////////////
-@import "index";
-
+@import 'index';

@@ -1,7 +1,7 @@
 .thumbnail-container {
   display: flex !important;
   flex-direction: column;
-  height: 32rem;
+  height: 34rem;
   margin-left: 1.5641%;
 
   &.background- {
@@ -16,10 +16,25 @@
       }
     }
 
+    &grey {
+      .thumbnail-label {
+        background-color: map-get($shades-of-grey, 'light');
+        color: $black;
+
+        a {
+          color: $orange;
+        }
+      }
+    }
+
     &hollow {
       .thumbnail-label {
         background-color: transparent;
         color: $black;
+
+        .subtitle {
+          color: $blue;
+        }
 
         a {
           color: $orange;
@@ -54,25 +69,42 @@
   }
 
   &.video {
-    position: relative;
+
 
     .thumbnail-image {
+      position: relative;
+
       &::after {
         color: $white;
         content: "\e617";
         display: inline-block;
         font-family: 'Symbolicons';
         font-size: 4.2rem;
-        line-height: 1;
         position: absolute;
         right: 1.5rem;
-        speak: none;
-        text-decoration: none;
-        text-rendering: optimizeLegibility;
-        text-transform: none;
-        top: 1.5rem;
-        vertical-align: text-top;
-        white-space: nowrap;
+        top: 2rem;
+      }
+    }
+  }
+
+  &.cinema-style {
+    .thumbnail-label {
+      padding: 1.5rem 0;
+      h3 {
+        color: $blue;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+
+      .subtitle {
+        color: $blue;
+      }
+
+      p {
+        font-size: 1.7rem;
+        font-weight: 100;
+        margin-top: 0.5rem;
       }
     }
   }
