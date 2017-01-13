@@ -358,46 +358,7 @@ section {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
-
-#navbarTop .navbar-inner {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fcfaf8;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 8rem; }
-
-#navbarTop .brand {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 4rem;
-  white-space: nowrap; }
-  #navbarTop .brand img {
-    height: 4rem; }
-
-#navbarTop .search-field input {
-  -webkit-border-radius: 0;
-          border-radius: 0; }
-
-#navbarTop .search-field button {
-  -webkit-border-radius: 0;
-          border-radius: 0; }
-  #navbarTop .search-field button i {
-    color: white; }
-
-#navbarTop .nav-right {
-  text-align: right; }
-  #navbarTop .nav-right .nav {
+  .navbar-collapse .navbar-right {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -405,35 +366,15 @@ section {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 100%; }
-    #navbarTop .nav-right .nav .flag img {
+    display: flex; }
+    .navbar-collapse .navbar-right .flag img {
       height: 2.2rem;
       margin-right: 1.4rem; }
-    #navbarTop .nav-right .nav .welcome-user {
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      #navbarTop .nav-right .nav .welcome-user img {
-        margin-left: 1rem; }
-      #navbarTop .nav-right .nav .welcome-user p {
-        margin-bottom: 0;
-        margin-right: 1rem;
-        white-space: nowrap; }
-    #navbarTop .nav-right .nav .birdhouse {
-      margin-left: 1.3rem; }
-      #navbarTop .nav-right .nav .birdhouse img {
-        height: 4.5rem;
-        width: 4.5rem; }
+    .navbar-collapse .navbar-right .welcome-user .welcome-text {
+      float: left;
+      text-align: right; }
+    .navbar-collapse .navbar-right .birdhouse img {
+      width: 5rem; }
 
 #sub-nav {
   margin-bottom: 2.5rem; }

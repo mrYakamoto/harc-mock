@@ -2,86 +2,33 @@
 .navbar-collapse {
   position: relative;
 
+
   form {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
-}
 
-
-#navbarTop {
-
-  .navbar-inner {
-    align-items: center;
-    background-color: map-get($shades-of-grey, 'xtra-light');
-    display: flex;
-    height: 8rem;
-  }
-
-  .brand {
+  .navbar-right {
     align-items: center;
     display: flex;
-    line-height: 4rem;
-    white-space: nowrap;
 
-    img {
-      height: 4rem;
-    }
-  }
-
-  .search-field {
-    input {
-      border-radius: 0;
-    }
-
-    button {
-      border-radius: 0;
-
-      i {
-        color: white;
+    .flag {
+      img {
+        height: 2.2rem;
+        margin-right: 1.4rem;
       }
     }
-  }
-
-  .nav-right {
-    text-align: right;
-
-    .nav {
-      align-items: center;
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-
-      .flag {
-        img {
-          height: 2.2rem;
-          margin-right: 1.4rem;
-        }
+    .welcome-user {
+      .welcome-text {
+        float: left;
+        text-align: right;
       }
-
-      .welcome-user {
-        align-items: center;
-        display: flex;
-
-        img {
-          margin-left: 1rem;
-        }
-
-        p {
-          margin-bottom: 0;
-          margin-right: 1rem;
-          white-space: nowrap;
-        }
-      }
-
-      .birdhouse {
-        margin-left: 1.3rem;
-
-        img {
-          height: 4.5rem;
-          width: 4.5rem;
-        }
+    }
+  
+    .birdhouse {
+      img {
+        width: 5rem;
       }
     }
   }
