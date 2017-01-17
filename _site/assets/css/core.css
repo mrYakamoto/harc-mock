@@ -196,7 +196,12 @@ section {
     left: 0.5rem; }
 
 .alert {
-  background-color: #fff; }
+  background-color: #fff;
+  color: black;
+  padding-left: 7rem;
+  text-align: left; }
+  .alert .inline-svg {
+    font-size: 5rem; }
 
 #carouselSection {
   margin-top: 2.5rem; }

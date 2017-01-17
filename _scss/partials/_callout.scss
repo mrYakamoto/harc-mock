@@ -1,5 +1,12 @@
 .alert {
   background-color: $white;
+  color: $black;
+  padding-left: 7rem;
+  text-align: left;
+
+  .inline-svg {
+    font-size: 5rem;
+  }
 }
 
 // .bs-callout {
