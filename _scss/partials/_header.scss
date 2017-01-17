@@ -1,35 +1,58 @@
+.navbar {
+  height: $header-height;
 
-.navbar-collapse {
-  position: relative;
+  .navbar-header {
+    height: $header-height;
 
+    .navbar-brand {
+      height: 100%;
 
-  form {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+      img {
+        height: 100%;
+      }
+    }
+
+    span {
+      font-size: 2rem;
+      line-height: $header-height;
+    }
   }
+  .navbar-collapse {
+    position: relative;
 
-  .navbar-right {
-    align-items: center;
-    display: flex;
+    form {
+      align-items: center;
+      display: flex;
+      height: $header-height;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-    .flag {
-      img {
-        height: 2.2rem;
-        margin-right: 1.4rem;
+    .navbar-right {
+      align-items: center;
+      display: flex;
+      height: $header-height;
+
+      .flag {
+        img {
+          height: 2.2rem;
+          margin-right: 1.4rem;
+        }
       }
-    }
-    .welcome-user {
-      .welcome-text {
-        float: left;
-        text-align: right;
+      .welcome-user {
+        .welcome-text {
+          float: left;
+          text-align: right;
+        }
       }
-    }
-  
-    .birdhouse {
-      img {
-        width: 5rem;
+
+      .birdhouse {
+        img {
+          width: 5rem;
+        }
       }
     }
   }
 }
+
