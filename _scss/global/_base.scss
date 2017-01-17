@@ -18,12 +18,12 @@ body {
   border-bottom: 1px solid transparentize(gray, 0.7);
   margin-bottom: 2rem;
 
-  h2 {
-    color: $blue;
-  }
+  // h2 {
+  //   color: $blue;
+  // }
 
   h3 {
-    color: $blue;
+    // color: $blue;
     font-size: 2.4rem;
   }
 }
@@ -41,7 +41,7 @@ section {
 }
 
 #footer {
-  background-color: map-get($shades-of-grey, 'dark');
+  // background-color: map-get($shades-of-grey, 'dark');
   height: 50rem;
   margin-top: 8rem;
   width: 100%;
@@ -54,7 +54,7 @@ section {
 
   .featured-box {
     align-items: center;
-    background: $blue;
+    // background: $blue;
     display: flex;
     flex: 0 1 auto;
     flex-direction: column;
@@ -104,7 +104,7 @@ section {
       }
 
       h4 {
-        color: $white;
+        // color: $white;
         display: inline;
         line-height: 4.5rem;
         margin: 0;
@@ -121,9 +121,9 @@ section {
         }
       }
 
-      p {
-        color: $white;
-      }
+      // p {
+      //   color: $white;
+      // }
     }
   }
 }

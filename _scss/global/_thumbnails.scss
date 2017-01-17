@@ -4,44 +4,44 @@
   height: 34rem;
   margin-left: 1.5641%;
 
-  &.background- {
-    &blue {
-      .thumbnail-label {
-        background-color: $blue;
-        color: $white;
+  // &.background- {
+  //   &blue {
+  //     .thumbnail-label {
+  //       background-color: $blue;
+  //       color: $white;
 
-        a {
-          color: $white;
-        }
-      }
-    }
+  //       a {
+  //         color: $white;
+  //       }
+  //     }
+  //   }
 
-    &grey {
-      .thumbnail-label {
-        background-color: map-get($shades-of-grey, 'light');
-        color: $black;
+  //   &grey {
+  //     .thumbnail-label {
+  //       background-color: map-get($shades-of-grey, 'light');
+  //       color: $black;
 
-        a {
-          color: $orange;
-        }
-      }
-    }
+  //       a {
+  //         color: $orange;
+  //       }
+  //     }
+  //   }
 
-    &hollow {
-      .thumbnail-label {
-        background-color: transparent;
-        color: $black;
+  //   &hollow {
+  //     .thumbnail-label {
+  //       background-color: transparent;
+  //       color: $black;
 
-        .subtitle {
-          color: $blue;
-        }
+  //       .subtitle {
+  //         color: $blue;
+  //       }
 
-        a {
-          color: $orange;
-        }
-      }
-    }
-  }
+  //       a {
+  //         color: $orange;
+  //       }
+  //     }
+  //   }
+  // }
 
   &.label-left {
     flex-direction: row;
@@ -49,6 +49,7 @@
     .thumbnail-label {
       float: left;
       height: 100%;
+      padding-right: 1.5rem;
       width: 35%;
 
       p {
@@ -63,7 +64,7 @@
       width: 65%;
 
       img {
-        width: 100%;
+        height: 100%;
       }
     }
   }
@@ -89,16 +90,15 @@
 
   &.cinema-style {
     .thumbnail-label {
-      padding: 1.5rem 0;
       h3 {
-        color: $blue;
+        // color: $blue;
         font-size: 2rem;
         font-weight: 500;
         margin-bottom: 0;
       }
 
       .subtitle {
-        color: $blue;
+        // color: $blue;
       }
 
       p {
@@ -113,7 +113,7 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
   }
 
   h3 {
@@ -133,60 +133,3 @@
     }
   }
 }
-
-// .thumbnail-container {
-//   position: relative;
-
-//   .thumbnail-label {
-//     background: $blue;
-//     color: $white;
-//     padding: 1.5rem;
-
-//     h3 {
-//       text-shadow: none;
-//     }
-//   }
-
-//   .thumbnail-image {
-//     background-image: url('http://placebear.com/368/322');
-//     background-repeat: no-repeat;
-//     margin: 0;
-//   }
-
-//   i {
-//     font-size: 5rem;
-//     position: absolute;
-//     right: 2.8rem;
-//     top: 2.2rem;
-//   }
-
-//   .thumb-link {
-//     color: $white;
-//   }
-
-//   &.label-left-md {
-//     .thumbnail-label {
-//       float: right;
-//       height: 100%;
-
-//       h3 {
-//         font-size: 2.2rem;
-//         line-height: 2.7rem;
-//       }
-//     }
-
-//     img {
-//       float: right;
-//     }
-//   }
-
-//   &.label-bottom-sm {
-//     .thumbnail-label {
-//       h3 {
-//         font-size: 1.8rem;
-//         line-height: 2.5rem;
-//         margin-bottom: 0.4rem;
-//       }
-//     }
-//   }
-// }

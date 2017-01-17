@@ -18,10 +18,7 @@ body {
 .section-header {
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
   margin-bottom: 2rem; }
-  .section-header h2 {
-    color: #296DB8; }
   .section-header h3 {
-    color: #296DB8;
     font-size: 2.4rem; }
 
 .thumbnail-container.label-left-md img {
@@ -31,7 +28,6 @@ section {
   margin-top: 5rem; }
 
 #footer {
-  background-color: #353e44;
   height: 50rem;
   margin-top: 8rem;
   width: 100%; }
@@ -47,7 +43,6 @@ section {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #296DB8;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -106,7 +101,6 @@ section {
         line-height: 4.5rem;
         width: 4.5rem; }
       .featured-boxes .featured-box .inner-box h4 {
-        color: #fff;
         display: inline;
         line-height: 4.5rem;
         margin: 0;
@@ -119,8 +113,6 @@ section {
           font-weight: 100;
           padding-left: 0.5rem;
           position: absolute; }
-      .featured-boxes .featured-box .inner-box p {
-        color: #fff; }
 
 .thumbnail-container {
   display: -webkit-box !important;
@@ -134,23 +126,6 @@ section {
           flex-direction: column;
   height: 34rem;
   margin-left: 1.5641%; }
-  .thumbnail-container.background-blue .thumbnail-label {
-    background-color: #296DB8;
-    color: #fff; }
-    .thumbnail-container.background-blue .thumbnail-label a {
-      color: #fff; }
-  .thumbnail-container.background-grey .thumbnail-label {
-    background-color: #F5F5F5;
-    color: black; }
-    .thumbnail-container.background-grey .thumbnail-label a {
-      color: #ffa500; }
-  .thumbnail-container.background-hollow .thumbnail-label {
-    background-color: transparent;
-    color: black; }
-    .thumbnail-container.background-hollow .thumbnail-label .subtitle {
-      color: #296DB8; }
-    .thumbnail-container.background-hollow .thumbnail-label a {
-      color: #ffa500; }
   .thumbnail-container.label-left {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -160,6 +135,7 @@ section {
     .thumbnail-container.label-left .thumbnail-label {
       float: left;
       height: 100%;
+      padding-right: 1.5rem;
       width: 35%; }
       .thumbnail-container.label-left .thumbnail-label p {
         -webkit-box-flex: 0;
@@ -172,7 +148,7 @@ section {
       overflow: hidden;
       width: 65%; }
       .thumbnail-container.label-left .thumbnail-image img {
-        width: 100%; }
+        height: 100%; }
   .thumbnail-container.video .thumbnail-image {
     position: relative; }
     .thumbnail-container.video .thumbnail-image::after {
@@ -184,19 +160,14 @@ section {
       position: absolute;
       right: 1.5rem;
       top: 2rem; }
-  .thumbnail-container.cinema-style .thumbnail-label {
-    padding: 1.5rem 0; }
-    .thumbnail-container.cinema-style .thumbnail-label h3 {
-      color: #296DB8;
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 0; }
-    .thumbnail-container.cinema-style .thumbnail-label .subtitle {
-      color: #296DB8; }
-    .thumbnail-container.cinema-style .thumbnail-label p {
-      font-size: 1.7rem;
-      font-weight: 100;
-      margin-top: 0.5rem; }
+  .thumbnail-container.cinema-style .thumbnail-label h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0; }
+  .thumbnail-container.cinema-style .thumbnail-label p {
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-top: 0.5rem; }
   .thumbnail-container .thumbnail-label {
     display: -webkit-box;
     display: -webkit-flex;
@@ -211,7 +182,7 @@ section {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    padding: 1.5rem; }
+    padding: 1.5rem 0; }
   .thumbnail-container h3 {
     text-shadow: none; }
   .thumbnail-container p {
@@ -224,76 +195,8 @@ section {
     position: relative;
     left: 0.5rem; }
 
-.bs-callout {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0.1rem solid lightgray;
-  border-left-width: 0.5rem;
-  -webkit-border-radius: 0.3rem;
-          border-radius: 0.3rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 2.5rem;
-  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
-  position: relative; }
-  .bs-callout .glyphicon-warning-sign {
-    font-size: 3rem;
-    margin-right: 2rem; }
-  .bs-callout .icon-close {
-    cursor: pointer;
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .bs-callout h4 {
-    margin-bottom: 0.5rem;
-    margin-top: 0; }
-  .bs-callout p {
-    margin-bottom: 0; }
-  .bs-callout code {
-    -webkit-border-radius: 0.3rem;
-            border-radius: 0.3rem; }
-
-.bs-callout-default {
-  border-left-color: #777; }
-  .bs-callout-default span {
-    color: #777; }
-
-.bs-callout-primary {
-  border-left-color: #428bca; }
-
-.bs-callout-primary span {
-  color: #428bca; }
-
-.bs-callout-success {
-  border-left-color: #5cb85c; }
-
-.bs-callout-success span {
-  color: #5cb85c; }
-
-.bs-callout-danger {
-  border-left-color: #d9534f; }
-
-.bs-callout-danger span {
-  color: #d9534f; }
-
-.bs-callout-warning {
-  border-left-color: #f0ad4e; }
-
-.bs-callout-warning span {
-  color: #f0ad4e; }
-
-.bs-callout-info {
-  border-left-color: #5bc0de; }
-
-.bs-callout-info span {
-  color: #5bc0de; }
+.alert {
+  background-color: #fff; }
 
 #carouselSection {
   margin-top: 2.5rem; }
@@ -322,10 +225,6 @@ section {
       .content-section .view-more a i {
         font-size: 1.8rem;
         margin-left: 1rem; }
-  .content-section.news-section .news-thumbnail .date {
-    color: #296DB8; }
-  .content-section.news-section h3 {
-    color: #296DB8; }
 
 .help-center {
   margin-bottom: 5rem; }
@@ -347,7 +246,6 @@ section {
       width: 7rem; }
     .help-center .help-banner h2
 , .help-center .help-banner h4 {
-      color: #fff;
       font-weight: 100; }
 
 .navbar-collapse {
@@ -376,9 +274,9 @@ section {
     .navbar-collapse .navbar-right .birdhouse img {
       width: 5rem; }
 
-#sub-nav {
+#navbar {
   margin-bottom: 2.5rem; }
-  #sub-nav .nav {
+  #navbar .nav {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -393,11 +291,9 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%; }
-    #sub-nav .nav a {
+    #navbar .nav a {
       font-size: 1.6rem; }
-      #sub-nav .nav a i {
+      #navbar .nav a i {
         color: #d6d2d3;
         font-size: 3.2rem;
         margin-right: 0.8rem; }
-      #sub-nav .nav a:hover i {
-        color: white; }

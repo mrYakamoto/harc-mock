@@ -1,75 +1,79 @@
-.bs-callout {
-  align-items: center;
-  border: 0.1rem solid lightgray;
-  border-left-width: 0.5rem;
-  border-radius: 0.3rem;
-  display: flex;
-  margin-top: 2.5rem;
-  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
-  position: relative;
-
-  .glyphicon-warning-sign {
-    font-size: 3rem;
-    margin-right: 2rem;
-  }
-
-  .icon-close {
-    cursor: pointer;
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  h4 {
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-
-  code {
-    border-radius: 0.3rem;
-  }
+.alert {
+  background-color: $white;
 }
 
-.bs-callout-default {
-  border-left-color: #777;
+// .bs-callout {
+//   align-items: center;
+//   border: 0.1rem solid lightgray;
+//   border-left-width: 0.5rem;
+//   border-radius: 0.3rem;
+//   display: flex;
+//   margin-top: 2.5rem;
+//   padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+//   position: relative;
 
-  span {
-    color: #777;
-  }
-}
+//   .glyphicon-warning-sign {
+//     font-size: 3rem;
+//     margin-right: 2rem;
+//   }
 
-.bs-callout-primary {
-  border-left-color: #428bca;
-}
-.bs-callout-primary span {
-  color: #428bca;
-}
-.bs-callout-success {
-  border-left-color: #5cb85c;
-}
-.bs-callout-success span {
-  color: #5cb85c;
-}
-.bs-callout-danger {
-  border-left-color: #d9534f;
-}
-.bs-callout-danger span {
-  color: #d9534f;
-}
-.bs-callout-warning {
-  border-left-color: #f0ad4e;
-}
-.bs-callout-warning span {
-  color: #f0ad4e;
-}
-.bs-callout-info {
-  border-left-color: #5bc0de;
-}
-.bs-callout-info span {
-  color: #5bc0de;
-}
+//   .icon-close {
+//     cursor: pointer;
+//     position: absolute;
+//     right: 1.5rem;
+//     top: 50%;
+//     transform: translateY(-50%);
+//   }
+
+//   h4 {
+//     margin-bottom: 0.5rem;
+//     margin-top: 0;
+//   }
+
+//   p {
+//     margin-bottom: 0;
+//   }
+
+//   code {
+//     border-radius: 0.3rem;
+//   }
+// }
+
+// .bs-callout-default {
+//   border-left-color: #777;
+
+//   span {
+//     color: #777;
+//   }
+// }
+
+// .bs-callout-primary {
+//   border-left-color: #428bca;
+// }
+// .bs-callout-primary span {
+//   color: #428bca;
+// }
+// .bs-callout-success {
+//   border-left-color: #5cb85c;
+// }
+// .bs-callout-success span {
+//   color: #5cb85c;
+// }
+// .bs-callout-danger {
+//   border-left-color: #d9534f;
+// }
+// .bs-callout-danger span {
+//   color: #d9534f;
+// }
+// .bs-callout-warning {
+//   border-left-color: #f0ad4e;
+// }
+// .bs-callout-warning span {
+//   color: #f0ad4e;
+// }
+// .bs-callout-info {
+//   border-left-color: #5bc0de;
+// }
+// .bs-callout-info span {
+//   color: #5bc0de;
+// }

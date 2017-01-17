@@ -1,4 +1,4 @@
-#sub-nav {
+#navbar {
   margin-bottom: 2.5rem;
 
   .nav {
@@ -9,6 +9,7 @@
     width: 100%;
 
     a {
+      // color: $white;
       font-size: 1.6rem;
 
       i {
@@ -17,11 +18,11 @@
         margin-right: 0.8rem;
       }
 
-      &:hover {
-        i {
-          color: white;
-        }
-      }
+      // &:hover {
+      //   i {
+      //     color: white;
+      //   }
+      // }
     }
   }
 }
