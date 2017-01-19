@@ -196,13 +196,25 @@ section {
     left: 0.5rem; }
 
 .alert {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   color: black;
-  margin: 0 2.5rem;
-  padding: 4rem 8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5 2.5rem;
+  padding: 2rem 8rem;
   text-align: left; }
   .alert i {
     font-size: 4rem; }
+  .alert p {
+    margin-bottom: 0; }
+  .alert a {
+    cursor: pointer; }
   .alert .close {
     font-size: 2.7rem;
     position: absolute;
@@ -219,6 +231,13 @@ section {
       content: '»';
       position: absolute;
       right: -1.5rem; }
+  .alert.img-alert {
+    clear: both;
+    padding: 1rem; }
+    .alert.img-alert::before {
+      display: none; }
+    .alert.img-alert img {
+      margin-right: 2rem; }
 
 #carouselSection {
   margin-top: 2.5rem; }

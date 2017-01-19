@@ -1,12 +1,22 @@
 .alert {
+  align-items: center;
   background-color: $white;
   color: $black;
-  margin: 0 2.5rem;
-  padding: 4rem 8rem;
+  display: flex;
+  margin: 2.5 2.5rem;
+  padding: 2rem 8rem;
   text-align: left;
 
   i {
     font-size: 4rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    cursor: pointer;
   }
 
   .close {
@@ -27,6 +37,19 @@
       position: absolute;
       right: -1.5rem;
 
+    }
+  }
+
+  &.img-alert {
+    clear: both;
+    padding: 1rem;
+
+    &::before {
+      display: none;
+    }
+
+    img {
+      margin-right: 2rem;
     }
   }
 }
