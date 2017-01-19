@@ -270,22 +270,22 @@ section {
 , .help-center .help-banner h4 {
       font-weight: 100; }
 
-.navbar {
+#header {
   height: 10rem;
   margin-bottom: 0; }
-  .navbar .navbar-header {
+  #header .navbar-header {
     height: 10rem; }
-    .navbar .navbar-header .navbar-brand {
+    #header .navbar-header .navbar-brand {
       height: 100%;
       padding: 0 1.8rem 0 3rem; }
-      .navbar .navbar-header .navbar-brand img {
+      #header .navbar-header .navbar-brand img {
         height: 4.5rem;
         position: relative;
         top: 50%;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); }
-    .navbar .navbar-header .subtitle {
+    #header .navbar-header .subtitle {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -295,12 +295,12 @@ section {
       display: -ms-flexbox;
       display: flex;
       height: 100%; }
-    .navbar .navbar-header span {
+    #header .navbar-header span {
       font-size: 2.3rem;
       line-height: 4.5rem; }
-  .navbar .navbar-collapse {
+  #header .navbar-collapse {
     position: relative; }
-    .navbar .navbar-collapse form {
+    #header .navbar-collapse form {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -315,21 +315,21 @@ section {
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
-      .navbar .navbar-collapse form button {
+      #header .navbar-collapse form button {
         border: 0;
         height: 4rem;
         position: relative;
         width: 4rem; }
-      .navbar .navbar-collapse form input {
+      #header .navbar-collapse form input {
         border-right: 0;
         height: 4rem;
         width: 30rem; }
-      .navbar .navbar-collapse form i {
+      #header .navbar-collapse form i {
         position: absolute;
         -webkit-transform: translateX(-50%) translateY(-50%) scaleX(-1);
             -ms-transform: translateX(-50%) translateY(-50%) scaleX(-1);
                 transform: translateX(-50%) translateY(-50%) scaleX(-1); }
-    .navbar .navbar-collapse .navbar-right {
+    #header .navbar-collapse .navbar-right {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -339,10 +339,10 @@ section {
       display: -ms-flexbox;
       display: flex;
       height: 10rem; }
-      .navbar .navbar-collapse .navbar-right .flag img {
+      #header .navbar-collapse .navbar-right .flag img {
         height: 2.2rem;
         margin-right: 1.4rem; }
-      .navbar .navbar-collapse .navbar-right .welcome-user {
+      #header .navbar-collapse .navbar-right .welcome-user {
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
@@ -351,17 +351,23 @@ section {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
-        .navbar .navbar-collapse .navbar-right .welcome-user .welcome-text {
+        #header .navbar-collapse .navbar-right .welcome-user .welcome-text {
           margin-right: 2rem;
           text-align: right; }
-          .navbar .navbar-collapse .navbar-right .welcome-user .welcome-text p {
+          #header .navbar-collapse .navbar-right .welcome-user .welcome-text p {
             margin-bottom: 0; }
-          .navbar .navbar-collapse .navbar-right .welcome-user .welcome-text .dropdown-toggle {
+          #header .navbar-collapse .navbar-right .welcome-user .welcome-text .dropdown-toggle {
             padding-right: 0;
             position: relative;
             right: -1rem; }
-      .navbar .navbar-collapse .navbar-right .birdhouse img {
+      #header .navbar-collapse .navbar-right .birdhouse img {
         width: 5rem; }
+
+.nav-underline.nav-underline-inverse > li * {
+  color: #fff; }
+
+.nav-underline.nav-underline-inverse > li:hover * {
+  color: #f0eeec; }
 
 #navbar {
   margin-bottom: 2.5rem; }
@@ -382,6 +388,7 @@ section {
     width: 100%; }
     #navbar .nav li {
       margin: 0;
+      padding: 0 3rem;
       position: relative; }
       #navbar .nav li:not(:last-of-type):after {
         border-right: 1px solid #fff;

@@ -1,3 +1,21 @@
+// HA BS override
+.nav-underline {
+  &.nav-underline-inverse {
+    > li {
+      * {
+        color: $white;
+      }
+
+      &:hover {
+        *{
+          color: map-get($shades-of-grey, 'medium');
+        }
+      }
+    }
+  }
+}
+
+
 #navbar {
   margin-bottom: 2.5rem;
 
@@ -10,7 +28,7 @@
 
     li {
       margin: 0;
-
+      padding: 0 3rem;
       position: relative;
 
       &:not(:last-of-type) {
@@ -30,23 +48,6 @@
         display: flex;
         padding: 1rem 1.5rem;
       }
-    }
-
-    a {
-      // color: $white;
-      // font-size: 1.6rem;
-
-      // i {
-      //   color: #d6d2d3;
-      //   font-size: 3.2rem;
-      //   margin-right: 0.8rem;
-      // }
-
-      // &:hover {
-      //   i {
-      //     color: white;
-      //   }
-      // }
     }
   }
 }
