@@ -10,7 +10,6 @@
 <!-- GT-Trav -->
   <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-gt.min.css">
   <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/gt.min.css">
-  <link href="//csvcus.homeaway.com/rsrcs/ha-bootstrap/2.12.1/css/gt-trav.css" rel="stylesheet" media="screen"/>
 
 <!-- GT-Owner -->
 <!--   <link rel="stylesheet" href="//csvcus.homeaway.com/rsrcs/baseline/2.2.1/stylesheets/baseline-gt.min.css">
@@ -43,10 +42,6 @@
 
 
 
-
-
-
-
   <link rel="stylesheet" href="/assets/css/core.css"/>
 </head>
 
@@ -61,23 +56,27 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display-->
     <div class="navbar-header">
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#header-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="assets/images/logo-blue.svg"/></a>
-      <span>Learning Hub</span>
+      <a class="navbar-brand" href="#"><img src="/assets/images/logo-blue.svg"/></a>
+      <div class="subtitle">
+        <span class="text-info">Learning Hub</span>
+      </div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling-->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left" role="search">
+    <div class="collapse navbar-collapse" id="header-collapse">
+      <form class="navbar-form" role="search">
         <div class="form-group">
-          <input class="form-control" type="text" placeholder="Search"/>
+          <input class="form-control text-center border-brand" type="text" placeholder="Search"/>
         </div>
-        <button class="btn btn-default" type="submit">Submit</button>
+        <button class="btn btn-primary btn-icon" type="submit">
+          <i class="icon-search"></i>
+        </button>
       </form>
 
       <ul class="nav navbar-nav navbar-right">

@@ -271,16 +271,33 @@ section {
       font-weight: 100; }
 
 .navbar {
-  height: 10rem; }
+  height: 10rem;
+  margin-bottom: 0; }
   .navbar .navbar-header {
     height: 10rem; }
     .navbar .navbar-header .navbar-brand {
-      height: 100%; }
+      height: 100%;
+      padding: 0 1.8rem 0 3rem; }
       .navbar .navbar-header .navbar-brand img {
-        height: 100%; }
+        height: 4.5rem;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); }
+    .navbar .navbar-header .subtitle {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%; }
     .navbar .navbar-header span {
-      font-size: 2rem;
-      line-height: 10rem; }
+      font-size: 2.3rem;
+      line-height: 4.5rem; }
   .navbar .navbar-collapse {
     position: relative; }
     .navbar .navbar-collapse form {
@@ -298,6 +315,20 @@ section {
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
+      .navbar .navbar-collapse form button {
+        border: 0;
+        height: 4rem;
+        position: relative;
+        width: 4rem; }
+      .navbar .navbar-collapse form input {
+        border-right: 0;
+        height: 4rem;
+        width: 30rem; }
+      .navbar .navbar-collapse form i {
+        position: absolute;
+        -webkit-transform: translateX(-50%) translateY(-50%) scaleX(-1);
+            -ms-transform: translateX(-50%) translateY(-50%) scaleX(-1);
+                transform: translateX(-50%) translateY(-50%) scaleX(-1); }
     .navbar .navbar-collapse .navbar-right {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -311,9 +342,24 @@ section {
       .navbar .navbar-collapse .navbar-right .flag img {
         height: 2.2rem;
         margin-right: 1.4rem; }
-      .navbar .navbar-collapse .navbar-right .welcome-user .welcome-text {
-        float: left;
-        text-align: right; }
+      .navbar .navbar-collapse .navbar-right .welcome-user {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .navbar .navbar-collapse .navbar-right .welcome-user .welcome-text {
+          margin-right: 2rem;
+          text-align: right; }
+          .navbar .navbar-collapse .navbar-right .welcome-user .welcome-text p {
+            margin-bottom: 0; }
+          .navbar .navbar-collapse .navbar-right .welcome-user .welcome-text .dropdown-toggle {
+            padding-right: 0;
+            position: relative;
+            right: -1rem; }
       .navbar .navbar-collapse .navbar-right .birdhouse img {
         width: 5rem; }
 
