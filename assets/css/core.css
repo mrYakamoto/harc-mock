@@ -380,9 +380,26 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%; }
-    #navbar .nav a {
-      font-size: 1.6rem; }
-      #navbar .nav a i {
-        color: #d6d2d3;
-        font-size: 3.2rem;
-        margin-right: 0.8rem; }
+    #navbar .nav li {
+      margin: 0;
+      position: relative; }
+      #navbar .nav li:not(:last-of-type):after {
+        border-right: 1px solid #fff;
+        content: '';
+        height: 40%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      #navbar .nav li a {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1rem 1.5rem; }
