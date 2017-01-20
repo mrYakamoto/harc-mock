@@ -201,7 +201,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  color: black;
+  color: #292524;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -290,10 +290,10 @@ section {
       font-weight: 100; }
 
 #header {
-  height: 10rem;
+  height: 9.35rem;
   margin-bottom: 0; }
   #header .navbar-header {
-    height: 10rem; }
+    height: 9.35rem; }
     #header .navbar-header .navbar-brand {
       height: 100%;
       padding: 0 1.8rem 0 3rem; }
@@ -328,7 +328,7 @@ section {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      height: 10rem;
+      height: 9.35rem;
       position: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
@@ -340,9 +340,23 @@ section {
         position: relative;
         width: 4rem; }
       #header .navbar-collapse form input {
+        border-color: rgba(85, 139, 201, 0.5);
         border-right: 0;
+        color: #2a6ebb;
         height: 4rem;
         width: 30rem; }
+        #header .navbar-collapse form input::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: #2a6ebb; }
+        #header .navbar-collapse form input::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #2a6ebb; }
+        #header .navbar-collapse form input:-ms-input-placeholder {
+          /* IE 10+ */
+          color: #2a6ebb; }
+        #header .navbar-collapse form input:-moz-placeholder {
+          /* Firefox 18- */
+          color: #2a6ebb; }
       #header .navbar-collapse form i {
         position: absolute;
         -webkit-transform: translateX(-50%) translateY(-50%) scaleX(-1);
@@ -357,7 +371,7 @@ section {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      height: 10rem; }
+      height: 9.35rem; }
       #header .navbar-collapse .navbar-right .flag img {
         height: 2.2rem;
         margin-right: 1.4rem; }
@@ -388,44 +402,42 @@ section {
 .nav-underline.nav-underline-inverse > li:hover * {
   color: #f0eeec; }
 
-#navbar {
-  margin-bottom: 2.5rem; }
-  #navbar .nav {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 5rem;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%; }
-    #navbar .nav li {
-      margin: 0;
-      padding: 0 3rem;
-      position: relative; }
-      #navbar .nav li:not(:last-of-type):after {
-        border-right: 1px solid #fff;
-        content: '';
-        height: 40%;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%); }
-      #navbar .nav li a {
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        padding: 1rem 1.5rem; }
+#navbar .nav {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  #navbar .nav li {
+    margin: 0;
+    padding: 0 3rem;
+    position: relative; }
+    #navbar .nav li:not(:last-of-type):after {
+      border-right: 1px solid #fff;
+      content: '';
+      height: 40%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    #navbar .nav li a {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 1rem 1.5rem; }
