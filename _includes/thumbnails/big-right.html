@@ -1,37 +1,38 @@
-<section class="container">
+<div class="container">
 	<div class="section-header">
-		<h2>Gray Thumbnails: <strong>featured on right</strong></h2>
+		<h2>{{section-title}}</h2>
 	</div>
-	<div class="row-fluid thumbnail-row">
-		<div class="col-xs-3 thumbnail-container background-hollow video">
-			<div class="thumbnail-image">
-				<img src="http://placebear.com/284/174"/>
-			</div>
-			<div class="thumbnail-label">
-				<h3>Rent with Ease</h3>
-				<p>Learn the best techniques to rent with the least amount of issues and pain points to become profitable!</p>
-				<a href="#">Watch This Video</a>
-			</div>
-		</div>
-		<div class="col-xs-3 thumbnail-container background-hollow video">
-			<div class="thumbnail-image">
-				<img src="http://placebear.com/284/174"/>
-			</div>
-			<div class="thumbnail-label">
-				<h3>Rent with Ease</h3>
-				<p>Learn the issues and pain points to become profitable!</p>
-				<a href="#">Watch This Video</a>
-			</div>
-		</div>
-		<div class="col-xs-6 thumbnail-container label-left background-grey">
-			<div class="thumbnail-label">
-				<h3>Get inspired by Hunter McDaniel</h3>
-				<p>Hunter owns a beautiful home in Miami Florida. Learn from his latest experience of renting out his home.</p>
-				<a href="#">Get Inspired</a>
-			</div>
-			<div class="thumbnail-image">
-				<img src="http://placebear.com/299/320"/>
-			</div>
-		</div>
+	<div class="row-fluid thumbnail-row big-right clearfix">
+
+		{% capture image-src %}http://fillmurray.com/284/175{% endcapture %}
+		{% capture image-type %}video{% endcapture %}
+		{% capture title %}Tutorial: Rates how to{% endcapture %}
+		{% capture body %}Pala tum valde qui praesent. Consectetuer a secundum ulciscor.{% endcapture %}
+		{% capture link-text %}Watch This Video{% endcapture %}
+		{% capture link-href %}#{% endcapture %}
+
+		{% include thumbnails/thumbnail-main.html %}
+
+
+		{% capture image-src %}http://fillmurray.com/284/176{% endcapture %}
+		{% capture image-type %}{% endcapture %}
+		{% capture title %}Cleaning Checklists{% endcapture %}
+		{% capture body %}Wisi nisl a tego exerci pecus pagus nimis capop ea forias letalis. Caecus mara aabico paulatim hos huic.{% endcapture %}
+		{% capture link-text %}Read More{% endcapture %}
+		{% capture link-href %}#{% endcapture %}
+
+		{% include thumbnails/thumbnail-main.html %}
+
+
+		{% capture image-src %}http://fillmurray.com/299/320{% endcapture %}
+		{% capture image-type %}{% endcapture %}
+		{% capture label-background %}background-light-blue{% endcapture %}
+		{% capture title %}Tutorial: Compelling Headlines{% endcapture %}
+		{% capture body %}Feugait incassum a vel ludus vulpes valde diam magna. Causa valetudo ex epulae proprius lenis lenis sit et.{% endcapture %}
+		{% capture link-text %}Start Tutorial{% endcapture %}
+		{% capture link-href %}#{% endcapture %}
+
+		{% include thumbnails/thumbnail-label-left.html %}
+
 	</div>
-</section>
+</div>
