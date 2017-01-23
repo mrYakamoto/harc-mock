@@ -209,10 +209,13 @@ body {
     width: 100%; }
 
 .content-section {
-  padding: 2.5rem 0; }
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem; }
   .content-section:nth-child(odd) {
     background: rgba(155, 199, 228, 0.15); }
-  .content-section .section-header h2 {
+  .content-section .date,
+  .content-section h2,
+  .content-section h3 {
     color: #2a6ebb; }
   .content-section h3 {
     font-size: 2rem;
@@ -232,14 +235,13 @@ body {
         margin-left: 1rem; }
   .content-section .news-and-blog-wrapper {
     margin-bottom: 1.5rem; }
-  .content-section .news-section .row,
-  .content-section .blog-section .row {
+  .content-section .blog-section .row,
+  .content-section .news-section .row {
     margin-bottom: 2rem; }
-  .content-section .news-section .date,
-  .content-section .news-section h3,
-  .content-section .blog-section .date,
-  .content-section .blog-section h3 {
-    color: #2a6ebb; }
+  .content-section .blog-section .date {
+    color: #292524; }
+  .content-section .most-popular-section .popular-item {
+    margin-bottom: 3rem; }
 
 .help-center {
   margin-bottom: 5rem; }

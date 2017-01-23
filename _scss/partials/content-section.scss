@@ -1,13 +1,15 @@
 .content-section {
-  padding: 2.5rem 0;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+
   &:nth-child(odd) {
     background: transparentize($lighter-blue, 0.85);
   }
 
-  .section-header {
-    h2 {
-      color: $blue;
-    }
+  .date,
+  h2,
+  h3 {
+    color: $blue;
   }
 
   h3 {
@@ -40,15 +42,23 @@
   .news-and-blog-wrapper {
     margin-bottom: 1.5rem;
   }
-  .news-section,
-  .blog-section {
+
+  .blog-section,
+  .news-section {
     .row {
       margin-bottom: 2rem;
     }
+  }
 
-    .date,
-    h3 {
-        color: $blue;
+  .blog-section {
+    .date {
+      color: $blackish;
+    }
+  }
+
+  .most-popular-section {
+    .popular-item {
+      margin-bottom: 3rem;
     }
   }
 }
