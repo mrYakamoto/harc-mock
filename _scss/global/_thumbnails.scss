@@ -1,3 +1,20 @@
+.thumbnail-row {
+  &.background-blue {
+    .thumbnail-container {
+      .thumbnail-label {
+        background-color: $blue;
+        padding: 1rem 1.5rem;
+
+        h3,
+        p,
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
 .thumbnail-container {
   display: flex;
   height: 32rem;
@@ -22,16 +39,27 @@
     }
   }
 
-  .thumbnail-label {
-    padding-top: 1.5rem;
-
-    &.background-gray {
+  &.label-left {
+    .thumbnail-label {
       background-color: map-get($shades-of-grey, 'medium');
     }
+  }
+
+  .thumbnail-label {
+    height: 100%;
+    padding-top: 1.5rem;
 
     h3 {
       color: $blue;
       font-weight: 900;
+    }
+
+    .thumbnail-link {
+      position: relative;
+
+      &::after {
+        content: ''
+      }
     }
   }
 }

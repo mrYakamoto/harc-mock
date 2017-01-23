@@ -14,35 +14,40 @@
 			{% capture link-text %}Watch This Video{% endcapture %}
 			{% capture link-href %}#{% endcapture %}
 
-			<div class="col-xs-3">
+			<div class="col-lg-3">
 				{% include thumbnails/thumbnail-standard.html %}
 			</div>
 
-		{% capture image-src %}http://fillmurray.com/284/176{% endcapture %}
-		{% capture img-type %}{% endcapture %}
-		{% capture title %}Cleaning Checklists{% endcapture %}
-		{% capture body %}Wisi nisl a tego exerci pecus pagus nimis capop ea forias letalis. Caecus mara aabico paulatim hos huic.{% endcapture %}
-		{% capture link-text %}Read More{% endcapture %}
-		{% capture link-href %}#{% endcapture %}
+			{% capture image-src %}http://fillmurray.com/284/176{% endcapture %}
+			{% capture img-type %}{% endcapture %}
+			{% capture title %}Cleaning Checklists{% endcapture %}
+			{% capture body %}Wisi nisl a tego exerci pecus pagus nimis capop ea forias letalis. Caecus mara aabico paulatim hos huic.{% endcapture %}
+			{% capture link-text %}Read More{% endcapture %}
+			{% capture link-href %}#{% endcapture %}
 
-		<div class="col-xs-3">
-			{% include thumbnails/thumbnail-standard.html %}
+			<div class="col-lg-3">
+				{% include thumbnails/thumbnail-standard.html %}
+			</div>
+
+
+			{% capture image-src %}http://fillmurray.com/299/320{% endcapture %}
+			{% capture img-type %}{% endcapture %}
+			{% capture label-background %}background-gray{% endcapture %}
+			{% capture title %}Tutorial: Compelling Headlines{% endcapture %}
+			{% capture body %}Feugait incassum a vel ludus vulpes valde diam magna. Causa valetudo ex epulae proprius lenis lenis sit et.{% endcapture %}
+			{% capture link-text %}Start Tutorial{% endcapture %}
+			{% capture link-href %}#{% endcapture %}
+
+
+			<div class="col-lg-6">
+				{% include thumbnails/thumbnail-label-left.html %}
+			</div>
 		</div>
 
-
-		{% capture image-src %}http://fillmurray.com/299/320{% endcapture %}
-		{% capture img-type %}{% endcapture %}
-		{% capture label-background %}background-gray{% endcapture %}
-		{% capture title %}Tutorial: Compelling Headlines{% endcapture %}
-		{% capture body %}Feugait incassum a vel ludus vulpes valde diam magna. Causa valetudo ex epulae proprius lenis lenis sit et.{% endcapture %}
-		{% capture link-text %}Start Tutorial{% endcapture %}
-		{% capture link-href %}#{% endcapture %}
-
-
-		<div class="col-xs-6">
-			{% include thumbnails/thumbnail-label-left.html %}
-		</div>
-
+		<div class="row">
+			<div class="col-lg-12 text-center view-more">
+				<a href="#" class="text-warning">View more {{section-title}}<span class="caret"></span></a>
+			</div>
 		</div>
 	</div>
 </div>

@@ -1,9 +1,30 @@
 .content-section {
-  padding-bottom: 2.5rem;
-  padding-top: 2.5rem;
+  margin-top: 2.5rem;
 
-  &:nth-child(odd) {
+  &.most-popular-section {
+    .popular-item {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &.news-and-blog-section {
     background: transparentize($lighter-blue, 0.85);
+    margin-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+    .blog-section,
+    .news-section {
+      .row {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .blog-section {
+      .date {
+        color: $blackish;
+      }
+    }
   }
 
   .date,
@@ -27,38 +48,9 @@
   }
 
   .view-more {
-    padding: 3.3rem;
-
-    a {
-      position: relative;
-
-      i {
-        font-size: 1.8rem;
-        margin-left: 1rem;
-      }
-    }
-  }
-
-  .news-and-blog-wrapper {
-    margin-bottom: 1.5rem;
-  }
-
-  .blog-section,
-  .news-section {
-    .row {
-      margin-bottom: 2rem;
-    }
-  }
-
-  .blog-section {
-    .date {
-      color: $blackish;
-    }
-  }
-
-  .most-popular-section {
-    .popular-item {
-      margin-bottom: 3rem;
+    padding-top: 3rem;
+    .caret {
+      margin-left: 1rem;
     }
   }
 }
