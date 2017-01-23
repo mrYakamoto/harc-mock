@@ -18,12 +18,7 @@ body {
   border-bottom: 1px solid transparentize(gray, 0.7);
   margin-bottom: 2rem;
 
-  // h2 {
-  //   color: $blue;
-  // }
-
   h3 {
-    // color: $blue;
     font-size: 2.4rem;
   }
 }
@@ -37,7 +32,6 @@ body {
 }
 
 #footer {
-  // background-color: map-get($shades-of-grey, 'dark');
   height: 50rem;
   margin-top: 8rem;
   width: 100%;
@@ -50,7 +44,6 @@ body {
 
   .featured-box {
     align-items: center;
-    // background: $blue;
     display: flex;
     flex: 0 1 auto;
     flex-direction: column;
@@ -100,7 +93,6 @@ body {
       }
 
       h4 {
-        // color: $white;
         display: inline;
         line-height: 4.5rem;
         margin: 0;
@@ -116,10 +108,6 @@ body {
           position: absolute;
         }
       }
-
-      // p {
-      //   color: $white;
-      // }
     }
   }
 }

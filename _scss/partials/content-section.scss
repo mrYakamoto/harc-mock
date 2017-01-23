@@ -1,11 +1,13 @@
 .content-section {
   padding: 2.5rem 0;
   &:nth-child(odd) {
-    background: map-get($shades-of-grey, 'medium');
+    background: transparentize($lighter-blue, 0.85);
   }
 
-  .row-fluid {
-    margin-bottom: 2.3rem;
+  .section-header {
+    h2 {
+      color: $blue;
+    }
   }
 
   h3 {
@@ -32,6 +34,21 @@
         font-size: 1.8rem;
         margin-left: 1rem;
       }
+    }
+  }
+
+  .news-and-blog-wrapper {
+    margin-bottom: 1.5rem;
+  }
+  .news-section,
+  .blog-section {
+    .row {
+      margin-bottom: 2rem;
+    }
+
+    .date,
+    h3 {
+        color: $blue;
     }
   }
 }

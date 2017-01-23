@@ -120,21 +120,33 @@ body {
   .thumbnail-container .thumbnail-image {
     background-repeat: no-repeat;
     background-size: cover; }
+    .thumbnail-container .thumbnail-image.video {
+      position: relative; }
+      .thumbnail-container .thumbnail-image.video::after {
+        background-image: url("http://fillmurray.com/50/50");
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        content: '';
+        height: 4rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 4rem; }
   .thumbnail-container .thumbnail-label {
     padding-top: 1.5rem; }
-    .thumbnail-container .thumbnail-label.background-light-blue {
-      background-color: 225896; }
+    .thumbnail-container .thumbnail-label.background-gray {
+      background-color: #f0eeec; }
     .thumbnail-container .thumbnail-label h3 {
       color: #2a6ebb;
       font-weight: 900; }
 
-.main-thumbnail {
+.thumbnail-standard {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .main-thumbnail .thumbnail-image {
+  .thumbnail-standard .thumbnail-image {
     height: 17.5rem;
     width: 100%; }
 
@@ -199,9 +211,9 @@ body {
 .content-section {
   padding: 2.5rem 0; }
   .content-section:nth-child(odd) {
-    background: #f0eeec; }
-  .content-section .row-fluid {
-    margin-bottom: 2.3rem; }
+    background: rgba(155, 199, 228, 0.15); }
+  .content-section .section-header h2 {
+    color: #2a6ebb; }
   .content-section h3 {
     font-size: 2rem;
     line-height: 2.3rem; }
@@ -218,6 +230,16 @@ body {
       .content-section .view-more a i {
         font-size: 1.8rem;
         margin-left: 1rem; }
+  .content-section .news-and-blog-wrapper {
+    margin-bottom: 1.5rem; }
+  .content-section .news-section .row,
+  .content-section .blog-section .row {
+    margin-bottom: 2rem; }
+  .content-section .news-section .date,
+  .content-section .news-section h3,
+  .content-section .blog-section .date,
+  .content-section .blog-section h3 {
+    color: #2a6ebb; }
 
 .help-center {
   margin-bottom: 5rem; }

@@ -5,13 +5,28 @@
   .thumbnail-image {
     background-repeat: no-repeat;
     background-size: cover;
+
+    &.video {
+      position: relative;
+
+      &::after {
+        background-image: url('http://fillmurray.com/50/50');
+        border-radius: 50%;
+        content: '';
+        height: 4rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 4rem;
+      }
+    }
   }
 
   .thumbnail-label {
     padding-top: 1.5rem;
 
-    &.background-light-blue {
-      background-color: $background-blue;
+    &.background-gray {
+      background-color: map-get($shades-of-grey, 'medium');
     }
 
     h3 {
@@ -21,7 +36,7 @@
   }
 }
 
-.main-thumbnail {
+.thumbnail-standard {
   flex-direction: column;
 
   .thumbnail-image {
