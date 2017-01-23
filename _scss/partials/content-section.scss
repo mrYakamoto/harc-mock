@@ -1,6 +1,6 @@
 .content-section {
-  padding-top: 2.5rem;
-  &:nth-child(even) {
+  padding: 2.5rem 0;
+  &:nth-child(odd) {
     background: map-get($shades-of-grey, 'medium');
   }
 
@@ -32,19 +32,6 @@
         font-size: 1.8rem;
         margin-left: 1rem;
       }
-    }
-  }
-
-  &.news-section {
-
-    .news-thumbnail {
-      .date {
-        // color: $blue;
-      }
-    }
-
-    h3 {
-      // color: $blue;
     }
   }
 }
