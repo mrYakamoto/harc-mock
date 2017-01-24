@@ -9,36 +9,57 @@
     <div class="row">
       <div class="row">
         <div class="col-md-4 popular-item">
-          <h3><strong>Handling Reservation Requests</strong></h3>
-          <p>Today's traveler wants to be able to book vacation rental properties online, just as...</p>
-          <a href="#" class="text-warning thumb-link">Read More</a>
+          {% assign image-src = false %}
+          {% assign img-type = false %}
+
+          {% capture title %}<strong>Handling Reservation Requests</strong>{% endcapture %}
+          {% capture body %}Today's traveler wants to be able to book vacation rental properties online, just as...{% endcapture %}
+          {% capture link-text %}Read More{% endcapture %}
+          {% capture link-href %}#{% endcapture %}
+
+          {% include thumbnails/thumbnail-standard.html %}
         </div>
         <div class="col-md-4 popular-item">
-          <h3><strong>Payment Methods</strong></h3>
-          <p>Travelers come to our sites expecting to book their vacation rental the same way...</p>
-          <a href="#" class="text-warning thumb-link">Read More</a>
+          {% capture title %}<strong>Payment Methods</strong>{% endcapture %}
+          {% capture body %}Travelers come to our sites expecting to book their vacation rental the same way...{% endcapture %}
+          {% capture link-text %}Read More{% endcapture %}
+          {% capture link-href %}#{% endcapture %}
+
+          {% include thumbnails/thumbnail-standard.html %}
         </div>
         <div class="col-md-4 popular-item">
-          <h3><strong>Cancellations and Refunds</strong></h3>
-          <p>We have provided three options for you to use when refunding a payment made on...</p>
-          <a href="#" class="text-warning thumb-link">Read More</a>
+          {% capture title %}<strong>Cancellations and Refunds</strong>{% endcapture %}
+          {% capture body %}We have provided three options for you to use when refunding a payment made on...{% endcapture %}
+          {% capture link-text %}Read More{% endcapture %}
+          {% capture link-href %}#{% endcapture %}
+
+          {% include thumbnails/thumbnail-standard.html %}
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 popular-item">
-          <h3><strong>Reviews</strong></h3>
-          <p>Reviews matter to travelers and will help you gain trust and credibility. As a...</p>
-          <a href="#" class="text-warning thumb-link">Read More</a>
+          {% capture title %}<strong>Reviews</strong>{% endcapture %}
+          {% capture body %}Reviews matter to travelers and will help you gain trust and credibility. As a...{% endcapture %}
+          {% capture link-text %}Read More{% endcapture %}
+          {% capture link-href %}#{% endcapture %}
+
+          {% include thumbnails/thumbnail-standard.html %}
         </div>
         <div class="col-md-4 popular-item">
-          <h3><strong>Calendar</strong></h3>
-          <p>Any future reservations you add or remove from the calendar on our site display on...</p>
-          <a href="#" class="text-warning thumb-link">Read More</a>
+          {% capture title %}<strong>Calendar</strong>{% endcapture %}
+          {% capture body %}Any future reservations you add or remove from the calendar on our site display on...{% endcapture %}
+          {% capture link-text %}Read More{% endcapture %}
+          {% capture link-href %}#{% endcapture %}
+
+          {% include thumbnails/thumbnail-standard.html %}
         </div>
         <div class="col-md-4 popular-item">
-          <h3><strong>What is the service fee?</strong></h3>
-          <p>The service fee is paid by the traveler when booking through the HomeAway websites...</p>
-          <a href="#" class="text-warning thumb-link">Read More</a>
+          {% capture title %}<strong>What is the service fee?</strong>{% endcapture %}
+          {% capture body %}The service fee is paid by the traveler when booking through the HomeAway websites...{% endcapture %}
+          {% capture link-text %}Read More{% endcapture %}
+          {% capture link-href %}#{% endcapture %}
+
+          {% include thumbnails/thumbnail-standard.html %}
         </div>
       </div>
     </div>
@@ -49,3 +70,4 @@
     </div>
   </div>
 </section>
+

@@ -4,6 +4,7 @@
 
   .featured-box {
     align-items: center;
+    color: $white;
     display: flex;
     flex: 0 1 auto;
     flex-direction: column;
@@ -53,6 +54,7 @@
       }
 
       h4 {
+        color: $white;
         display: inline;
         line-height: 4.5rem;
         margin: 0;
