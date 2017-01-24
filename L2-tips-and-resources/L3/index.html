@@ -17,20 +17,37 @@ layout: default
   </ul>
 </div>
 
+
+{% capture image-src %}http://fillmurray.com/284/175{% endcapture %}
+{% capture img-type %}{% endcapture %}
+{% capture title %}Tutorial: Rates how to{% endcapture %}
+{% capture body %}Pala tum valde qui praesent. Consectetuer a secundum ulciscor.{% endcapture %}
+{% capture link-text %}Read More{% endcapture %}
+{% capture link-href %}#{% endcapture %}
+
 <div class="container">
   <h2 class="section-header">Guest Management</h2>
-  <div class="row-fluid">
+  <div class="row">
 
-    <div class="span3"?>
+    <div class="col-md-3"?>
       {% include side-nav.html %}
     </div>
-
-    <div class="span9">
-      {% include thumbnails/normal-three-wide.html %}
-      {% include thumbnails/normal-three-wide.html %}
-      {% include thumbnails/normal-three-wide.html %}
-      {% include thumbnails/normal-three-wide.html %}
-      {% include thumbnails/normal-three-wide.html %}
+    <div class="col-md-9">
+      {% for i in (1..3) %}
+        <div class="row">
+          {% for n in (1..3) %}
+            <div class="col-md-4">
+              {% include thumbnails/thumbnail-standard.html %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        
+      </div>
     </div>
   </div>
 </div>
