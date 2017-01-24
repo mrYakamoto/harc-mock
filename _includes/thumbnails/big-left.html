@@ -33,22 +33,17 @@
 			{% capture image-src %}http://fillmurray.com/284/176{% endcapture %}
 			{% capture img-type %}video{% endcapture %}
 			{% capture title %}Cleaning Checklists{% endcapture %}
-			{% capture body %}Wisi nisl a tego exerci pecus pagus nimis capop ea forias letalis. Caecus mara aabico paulatim hos huic.{% endcapture %}
+			{% capture body %}Wisi nisl a tego exerci pecus pagus nimis capop ea forias letalis...{% endcapture %}
 			{% capture link-text %}Watch This Video{% endcapture %}
 			{% capture link-href %}#{% endcapture %}
 
 			<div class="col-md-3">
 				{% include thumbnails/thumbnail-standard.html %}
 			</div>
-
-
-
 		</div>
 
-		<div class="row">
-			<div class="col-md-12 text-center view-more">
-				<a href="#" class="text-warning">View more {{section-title}}<span class="caret"></span></a>
-			</div>
-		</div>
+		{% if view-more %}
+			{% include thumbnails/view-more.html %}
+		{% endif %}
 	</div>
 </div>

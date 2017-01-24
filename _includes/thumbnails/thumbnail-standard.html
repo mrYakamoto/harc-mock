@@ -1,8 +1,14 @@
-<div class="thumbnail-container thumbnail-standard background-hollow">
-	<a href="#">
-		<div class="thumbnail-image {{img-type}}" style="background-image: url({{image-src}});">
-		</div>
-	</a>
+{% unless image-src %}
+	{% assign no-image-class = 'no-image' %}
+{% endunless %}
+
+<div class="thumbnail-container thumbnail-standard background-hollow {{no-image-class}}">
+	{% if image-src %}
+		<a href="#">
+			<div class="thumbnail-image {{img-type}}" style="background-image: url({{image-src}});">
+			</div>
+		</a>
+	{% endif %}
 	<div class="thumbnail-label">
 		<h3><strong>{{title}}</strong></h3>
 		<p>{{body}}</p>

@@ -35,11 +35,12 @@
 			{% capture link-text %}Start Tutorial{% endcapture %}
 			{% capture link-href %}#{% endcapture %}
 
-
 			<div class="col-md-4">
 				{% include thumbnails/thumbnail-standard.html %}
 			</div>
 		</div>
-		{% include thumbnails/view-more.html %}
+		{% if view-more %}
+			{% include thumbnails/view-more.html %}
+		{% endif %}
 	</div>
 </div>

@@ -44,10 +44,8 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-md-12 text-center view-more">
-				<a href="#" class="text-warning">View more {{section-title}}<span class="caret"></span></a>
-			</div>
-		</div>
+		{% if view-more %}
+			{% include thumbnails/view-more.html %}
+		{% endif %}
 	</div>
 </div>
