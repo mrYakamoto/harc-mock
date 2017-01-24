@@ -62,7 +62,22 @@ layout: default
   </div>
 </div>
 
-{% include thumbnails/big-left.html %}
-{% include thumbnails/cinema-style.html %}
+<section class="excerpt-section rental-basics-section">
+  {% capture section-title %}Suggested for you: <strong>Rental Basics</strong>{% endcapture %}
+  {% include thumbnails/big-left.html %}
+</section>
+
+<section class="excerpt-section rental-basics-section">
+  {% capture section-title %}Suggested for you: <strong>Guest Management</strong>{% endcapture %}
+  {% include thumbnails/cinema-three-wide.html %}
+</section>
+
+<section class="excerpt-section rental-basics-section">
+  {% capture section-title %}Suggested for you: <strong>Rental Basics</strong>{% endcapture %}
+  {% include thumbnails/big-left.html %}
+</section>
+
+
+{% include thumbnails/cinema-three-wide.html %}
 {% include thumbnails/big-right.html %}
 

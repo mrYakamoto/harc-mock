@@ -1,0 +1,45 @@
+<div class="container">
+
+	<div class="row">
+		<div class="section-header">
+			<h2>{{section-title}}</h2>
+		</div>
+
+		<div class="row thumbnail-row clearfix">
+			{% capture image-src %}http://fillmurray.com/284/175{% endcapture %}
+			{% capture img-type %}video{% endcapture %}
+			{% capture title %}Tutorial: Rates how to{% endcapture %}
+			{% capture body %}Pala tum valde qui praesent. Consectetuer a secundum ulciscor.{% endcapture %}
+			{% capture link-text %}Watch This Video{% endcapture %}
+			{% capture link-href %}#{% endcapture %}
+
+			<div class="col-md-4">
+				{% include thumbnails/thumbnail-standard.html %}
+			</div>
+
+			{% capture image-src %}http://fillmurray.com/284/176{% endcapture %}
+			{% capture img-type %}{% endcapture %}
+			{% capture title %}Cleaning Checklists{% endcapture %}
+			{% capture body %}Wisi nisl a tego exerci pecus pagus nimis capop ea forias letalis. Caecus mara aabico paulatim hos huic.{% endcapture %}
+			{% capture link-text %}Read More{% endcapture %}
+			{% capture link-href %}#{% endcapture %}
+
+			<div class="col-md-4">
+				{% include thumbnails/thumbnail-standard.html %}
+			</div>
+			{% capture image-src %}http://fillmurray.com/299/320{% endcapture %}
+			{% capture img-type %}{% endcapture %}
+			{% capture label-background %}background-gray{% endcapture %}
+			{% capture title %}Tutorial: Compelling Headlines{% endcapture %}
+			{% capture body %}Feugait incassum a vel ludus vulpes valde diam magna. Causa valetudo ex epulae proprius lenis lenis sit et.{% endcapture %}
+			{% capture link-text %}Start Tutorial{% endcapture %}
+			{% capture link-href %}#{% endcapture %}
+
+
+			<div class="col-md-4">
+				{% include thumbnails/thumbnail-standard.html %}
+			</div>
+		</div>
+		{% include thumbnails/view-more.html %}
+	</div>
+</div>
