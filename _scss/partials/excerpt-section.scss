@@ -38,15 +38,6 @@
     line-height: 2.3rem;
   }
 
-  .thumb-link {
-    position: relative;
-    &::after {
-      content: '»';
-      position: absolute;
-      right: -1.5rem;
-    }
-  }
-
   .view-more {
     padding-top: 3rem;
     .caret {
