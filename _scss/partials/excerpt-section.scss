@@ -1,0 +1,56 @@
+.excerpt-section {
+  margin-top: 2.5rem;
+
+  &.most-popular-section {
+    .popular-item {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &.news-and-blog-section {
+    background: transparentize($lighter-blue, 0.85);
+    margin-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+    .blog-section,
+    .news-section {
+      .row {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .blog-section {
+      .date {
+        color: $blackish;
+      }
+    }
+  }
+
+  .date,
+  h2,
+  h3 {
+    color: $blue;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  .thumb-link {
+    position: relative;
+    &::after {
+      content: '»';
+      position: absolute;
+      right: -1.5rem;
+    }
+  }
+
+  .view-more {
+    padding-top: 3rem;
+    .caret {
+      margin-left: 1rem;
+    }
+  }
+}

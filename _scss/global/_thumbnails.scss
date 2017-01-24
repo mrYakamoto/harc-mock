@@ -1,67 +1,86 @@
-.thumbnail-container {
-  float: left;
-  height: 32.2rem;
-  position: relative;
+.thumbnail-row {
+  &.background-blue {
+    .thumbnail-container {
+      .thumbnail-label {
+        background-color: $blue;
+        padding: 1rem 1.5rem;
 
-  &:not(:first-of-type) {
-    margin-left: 1.5rem;
+        h3,
+        p,
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.thumbnail-container {
+  display: flex;
+  height: 32rem;
+
+  .thumbnail-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.video {
+      position: relative;
+
+      &::after {
+        background-image: url('http://fillmurray.com/50/50');
+        border-radius: 50%;
+        content: '';
+        height: 4rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 4rem;
+      }
+    }
+  }
+
+  &.label-left {
+    .thumbnail-label {
+      background-color: map-get($shades-of-grey, 'medium');
+    }
   }
 
   .thumbnail-label {
-    background: $blue;
-    color: $white;
-    padding: 1.5rem;
+    height: 100%;
+    padding-top: 1.5rem;
 
     h3 {
-      text-shadow: none;
+      color: $blue;
+      font-weight: 900;
     }
-  }
 
-  i {
-    font-size: 5rem;
-    position: absolute;
-    right: 2.8rem;
-    top: 2.2rem;
-  }
+    .thumbnail-link {
+      position: relative;
 
-  .thumb-link {
-    color: $white;
-  }
-
-  &.label-left-md {
-    height: 32.2rem;
-    width: 57rem;
-
-    .thumbnail-label {
-      float: right;
-      height: 100%;
-      width: 20.2rem;
-
-      h3 {
-        font-size: 2.2rem;
-        line-height: 2.7rem;
+      &::after {
+        content: ''
       }
     }
-
-    img {
-      float: right;
-      height: 32.2rem;
-      width: 36.8rem; 
-    }
   }
+}
 
-  &.label-bottom-sm {
-    height: 32.2rem;
-    width: 28.4rem;
+.thumbnail-standard {
+  flex-direction: column;
 
-    .thumbnail-label {
-      height: 14.7rem;
+  .thumbnail-image {
+    height: 17.5rem;
+    width: 100%;
+  }
+}
 
-      h3 {
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-        margin-bottom: 0.4rem;
-      }
-    }
+.label-left {
+  .thumbnail-label {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 40%;
+  }
+  .thumbnail-image {
+    height: 100%;
+    width: 60%;
   }
 }

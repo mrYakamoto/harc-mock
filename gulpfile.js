@@ -79,11 +79,11 @@ gulp.task('serve', () => {
   });
 
   gulp.watch('_scss/**/*.scss', ['sass']);
-  gulp.watch('_pugfiles/**/*.pug', ['pug']);
+  gulp.watch('_includes/**/*.html', ['jekyll']);
 });
 
 // =============================================================================
 // Default Task
 // =============================================================================
 //
-gulp.task('default', ['sass', 'pug', 'jekyll', 'serve']);
+gulp.task('default', ['sass', 'jekyll', 'serve']);

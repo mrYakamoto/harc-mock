@@ -1,13 +1,28 @@
-// =============================================================================
-// Colors
-// =============================================================================
-//
+$header-height: 9.35rem;
+
+// colors 
+
 $shades-of-grey: (
   'xtra-light': #fcfaf8,
   'light':      #F5F5F5,
-  'medium':     #f0eeec
+  'medium':     #f0eeec,
+  'dark':       #353e44
 );
 
-$blue: #296DB8;
+$background-blue: #225896;
+$background-color: #f1f1f1;
+$blackish: #292524;
+$blue: #2a6ebb;
+$gray: #72787c;
+$light-blue: #558bc9;
+$lighter-blue: #9bc7e4;
+$light-gray: #d7d8da;
 $orange: #ffa500;
 $white: #fff;
+
+
+// responsive widths
+
+$xs-width: 769px;
+$sm-width: 992px;
+$md-width: 1200px;

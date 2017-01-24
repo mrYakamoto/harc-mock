@@ -1,0 +1,121 @@
+#header {
+  height: $header-height;
+  margin-bottom: 0;
+
+  .navbar-header {
+    height: $header-height;
+
+    .navbar-brand {
+      height: 100%;
+      padding: 0 1.8rem 0 3rem;
+
+      img {
+        height: 4.5rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .subtitle {
+      align-items: center;
+      display: flex;
+      height: 100%;
+    }
+
+    span {
+      font-size: 2.3rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .navbar-collapse {
+    position: relative;
+
+    form {
+      align-items: center;
+      display: flex;
+      height: $header-height;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+
+      button {
+        border: 0;
+        height: 4rem;
+        position: relative;
+        width: 4rem;
+      }
+
+      input {
+        border-color: transparentize($light-blue, 0.5);
+        border-right: 0;
+        color: $blue;
+        height: 4rem;
+        width: 40rem;
+
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: $blue;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: $blue;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+          color: $blue;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          color: $blue;
+        }
+      }
+
+      i {
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%) scaleX(-1);
+      }
+    }
+
+    .navbar-right {
+      align-items: center;
+      display: flex;
+      height: $header-height;
+
+      .flag {
+        img {
+          height: 2.2rem;
+          margin-right: 1.4rem;
+        }
+      }
+      .welcome-user {
+        align-items: center;
+        display: flex;
+
+        img {
+          height: 4.5rem;
+          width: 4.5rem;
+        }
+
+        .welcome-text {
+          margin-right: 2rem;
+          text-align: right;
+
+          p {
+            margin-bottom: 0;
+          }
+
+          .dropdown-toggle {
+            padding-right: 0;
+            position: relative;
+            right: -1rem;
+          }
+        }
+      }
+
+      .birdhouse {
+        img {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
+

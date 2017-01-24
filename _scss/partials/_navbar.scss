@@ -1,0 +1,52 @@
+// HA BS override
+.nav-underline {
+  &.nav-underline-inverse {
+    > li {
+      * {
+        color: $white;
+      }
+
+      &:hover {
+        *{
+          color: map-get($shades-of-grey, 'medium');
+        }
+      }
+    }
+  }
+}
+
+
+#navbar {
+
+  .nav {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    width: 100%;
+
+    li {
+      margin: 0;
+      padding: 0 3rem;
+      position: relative;
+
+      &:not(:last-of-type) {
+        &:after {
+          border-right: 1px solid $white;
+          content: '';
+          height: 40%;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      a {
+        align-items: center;
+        display: flex;
+        padding: 1rem 1.5rem;
+      }
+    }
+  }
+}

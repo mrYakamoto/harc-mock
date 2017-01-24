@@ -1,75 +1,55 @@
-.bs-callout {
+.alert {
   align-items: center;
-  border: 0.1rem solid lightgray;
-  border-left-width: 0.5rem;
-  border-radius: 0.3rem;
+  background-color: $white;
+  color: $blackish;
   display: flex;
-  margin-top: 2.5rem;
-  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
-  position: relative;
+  margin: 2.5 2.5rem;
+  padding: 2rem 8rem;
+  text-align: left;
 
-  .glyphicon-warning-sign {
-    font-size: 3rem;
-    margin-right: 2rem;
-  }
-
-  .icon-close {
-    cursor: pointer;
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  h4 {
-    margin-bottom: 0.5rem;
-    margin-top: 0;
+  i {
+    font-size: 4rem;
   }
 
   p {
     margin-bottom: 0;
   }
 
-  code {
-    border-radius: 0.3rem;
+  a {
+    cursor: pointer;
   }
-}
 
-.bs-callout-default {
-  border-left-color: #777;
-
-  span {
-    color: #777;
+  .close {
+    font-size: 2.7rem;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
-}
 
-.bs-callout-primary {
-  border-left-color: #428bca;
-}
-.bs-callout-primary span {
-  color: #428bca;
-}
-.bs-callout-success {
-  border-left-color: #5cb85c;
-}
-.bs-callout-success span {
-  color: #5cb85c;
-}
-.bs-callout-danger {
-  border-left-color: #d9534f;
-}
-.bs-callout-danger span {
-  color: #d9534f;
-}
-.bs-callout-warning {
-  border-left-color: #f0ad4e;
-}
-.bs-callout-warning span {
-  color: #f0ad4e;
-}
-.bs-callout-info {
-  border-left-color: #5bc0de;
-}
-.bs-callout-info span {
-  color: #5bc0de;
+  .text-warning {
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+
+    &::after {
+      content: '»';
+      position: absolute;
+      right: -1.5rem;
+
+    }
+  }
+
+  &.img-alert {
+    clear: both;
+    padding: 1rem;
+
+    &::before {
+      display: none;
+    }
+
+    img {
+      margin-right: 2rem;
+    }
+  }
 }
