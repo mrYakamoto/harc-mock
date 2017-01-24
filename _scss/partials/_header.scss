@@ -16,7 +16,7 @@
         transform: translateY(-50%);
       }
     }
-    
+
     .subtitle {
       align-items: center;
       display: flex;
@@ -28,6 +28,7 @@
       line-height: 4.5rem;
     }
   }
+
   .navbar-collapse {
     position: relative;
 
@@ -35,8 +36,8 @@
       align-items: center;
       display: flex;
       height: $header-height;
-      position: absolute;
       left: 50%;
+      position: absolute;
       transform: translateX(-50%);
 
       button {
@@ -51,7 +52,7 @@
         border-right: 0;
         color: $blue;
         height: 4rem;
-        width: 30rem;
+        width: 40rem;
 
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
           color: $blue;
@@ -87,6 +88,11 @@
       .welcome-user {
         align-items: center;
         display: flex;
+
+        img {
+          height: 4.5rem;
+          width: 4.5rem;
+        }
 
         .welcome-text {
           margin-right: 2rem;
