@@ -4,6 +4,8 @@
 
   .navbar-header {
     height: $header-height;
+    position: relative;
+    z-index: 1;
 
     .navbar-brand {
       height: 100%;

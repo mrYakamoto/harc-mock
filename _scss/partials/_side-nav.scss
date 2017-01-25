@@ -1,0 +1,28 @@
+.side-nav {
+  .panel {
+    padding: 0 1.5rem;
+    ul {
+      margin: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .panel-collapse {
+      padding-bottom: 1.5rem;
+
+      li {
+        padding-top: 1.5rem;
+
+        &:first-of-type {
+          padding-top: 1rem;
+        }
+
+        &:last-of-type {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

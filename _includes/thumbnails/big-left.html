@@ -5,11 +5,15 @@
 			<h2>{{section-title}}</h2>
 		</div>
 
-		<div class="row thumbnail-row big-left clearfix {{background-class}}">
+		<div class="row thumbnail-row big-left clearfix">
+
 
 			{% capture thumbnail-container-classes %}col-md-6{% endcapture %}
 			{% capture image-src %}http://fillmurray.com/299/320{% endcapture %}
 			{% capture img-type %}{% endcapture %}
+			{% unless {{label-background}} == 'bg-brand' %}
+				{% capture label-background %}bg-grey{% endcapture %}
+			{% endunless %}
 			{% capture title %}Tutorial: Compelling Headlines{% endcapture %}
 			{% capture body %}Feugait incassum a vel ludus vulpes valde diam magna. Causa valetudo ex epulae proprius lenis lenis sit et.{% endcapture %}
 			{% capture link-text %}Start Tutorial{% endcapture %}
