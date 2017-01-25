@@ -1,4 +1,10 @@
 .thumbnail-row {
+  display: flex;
+
+  &:not(:first-of-type) {
+    margin-top: 3rem;
+  }
+
   &.background-blue {
     .thumbnail-container {
       .thumbnail-label {
@@ -17,7 +23,6 @@
 
 .thumbnail-container {
   display: flex;
-  height: 32rem;
 
   &.no-image {
     height: auto;
@@ -53,6 +58,8 @@
   }
 
   &.label-left {
+      min-height: 32rem;
+
     .thumbnail-label {
       background-color: map-get($shades-of-grey, 'medium');
       padding-left: 1.5rem;

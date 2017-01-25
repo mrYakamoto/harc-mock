@@ -30,20 +30,26 @@ body {
   margin-top: 8rem;
   width: 100%; }
 
-.thumbnail-row.background-blue .thumbnail-container .thumbnail-label {
-  background-color: #2a6ebb;
-  padding: 1rem 1.5rem; }
-  .thumbnail-row.background-blue .thumbnail-container .thumbnail-label h3,
-  .thumbnail-row.background-blue .thumbnail-container .thumbnail-label p,
-  .thumbnail-row.background-blue .thumbnail-container .thumbnail-label a {
-    color: #fff; }
+.thumbnail-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .thumbnail-row:not(:first-of-type) {
+    margin-top: 3rem; }
+  .thumbnail-row.background-blue .thumbnail-container .thumbnail-label {
+    background-color: #2a6ebb;
+    padding: 1rem 1.5rem; }
+    .thumbnail-row.background-blue .thumbnail-container .thumbnail-label h3,
+    .thumbnail-row.background-blue .thumbnail-container .thumbnail-label p,
+    .thumbnail-row.background-blue .thumbnail-container .thumbnail-label a {
+      color: #fff; }
 
 .thumbnail-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  height: 32rem; }
+  display: flex; }
   .thumbnail-container.no-image {
     height: auto; }
   .thumbnail-container .thumbnail-image {
@@ -70,14 +76,16 @@ body {
     .thumbnail-container.thumbnail-standard .thumbnail-image {
       height: 17.5rem;
       width: 100%; }
-  .thumbnail-container.label-left .thumbnail-label {
-    background-color: #f0eeec;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    width: 40%; }
-  .thumbnail-container.label-left .thumbnail-image {
-    height: 100%;
-    width: 60%; }
+  .thumbnail-container.label-left {
+    min-height: 32rem; }
+    .thumbnail-container.label-left .thumbnail-label {
+      background-color: #f0eeec;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 40%; }
+    .thumbnail-container.label-left .thumbnail-image {
+      height: 100%;
+      width: 60%; }
   .thumbnail-container .thumbnail-label {
     height: 100%;
     padding-top: 1.5rem; }
