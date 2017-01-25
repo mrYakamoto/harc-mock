@@ -37,13 +37,6 @@ body {
   display: flex; }
   .thumbnail-row:not(:first-of-type) {
     margin-top: 3rem; }
-  .thumbnail-row.background-blue .thumbnail-container .thumbnail-label {
-    background-color: #2a6ebb;
-    padding: 1rem 1.5rem; }
-    .thumbnail-row.background-blue .thumbnail-container .thumbnail-label h3,
-    .thumbnail-row.background-blue .thumbnail-container .thumbnail-label p,
-    .thumbnail-row.background-blue .thumbnail-container .thumbnail-label a {
-      color: #fff; }
 
 .thumbnail-container {
   display: -webkit-box;
@@ -67,6 +60,22 @@ body {
         right: 1rem;
         top: 1rem;
         width: 4rem; }
+  .thumbnail-container .thumbnail-label {
+    height: 100%;
+    padding-top: 1.5rem; }
+    .thumbnail-container .thumbnail-label.bg-brand {
+      padding: 1rem 1.5rem; }
+      .thumbnail-container .thumbnail-label.bg-brand h3,
+      .thumbnail-container .thumbnail-label.bg-brand p,
+      .thumbnail-container .thumbnail-label.bg-brand a {
+        color: #fff; }
+    .thumbnail-container .thumbnail-label h3 {
+      color: #2a6ebb;
+      font-weight: 900; }
+    .thumbnail-container .thumbnail-label .thumbnail-link {
+      position: relative; }
+      .thumbnail-container .thumbnail-label .thumbnail-link::after {
+        content: ''; }
   .thumbnail-container.thumbnail-standard {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -79,23 +88,14 @@ body {
   .thumbnail-container.label-left {
     min-height: 32rem; }
     .thumbnail-container.label-left .thumbnail-label {
-      background-color: #f0eeec;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
       width: 40%; }
+      .thumbnail-container.label-left .thumbnail-label.bg-grey {
+        background-color: #f0eeec; }
     .thumbnail-container.label-left .thumbnail-image {
       height: 100%;
       width: 60%; }
-  .thumbnail-container .thumbnail-label {
-    height: 100%;
-    padding-top: 1.5rem; }
-    .thumbnail-container .thumbnail-label h3 {
-      color: #2a6ebb;
-      font-weight: 900; }
-    .thumbnail-container .thumbnail-label .thumbnail-link {
-      position: relative; }
-      .thumbnail-container .thumbnail-label .thumbnail-link::after {
-        content: ''; }
   .thumbnail-container .thumb-link {
     position: relative; }
     .thumbnail-container .thumb-link::after {
@@ -182,7 +182,9 @@ body {
   height: 9.35rem;
   margin-bottom: 0; }
   #header .navbar-header {
-    height: 9.35rem; }
+    height: 9.35rem;
+    position: relative;
+    z-index: 1; }
     #header .navbar-header .navbar-brand {
       height: 100%;
       padding: 0 1.8rem 0 3rem; }
@@ -333,6 +335,21 @@ body {
       display: -ms-flexbox;
       display: flex;
       padding: 1rem 1.5rem; }
+
+.side-nav .panel {
+  padding: 0 1.5rem; }
+  .side-nav .panel ul {
+    margin: 0; }
+    .side-nav .panel ul li {
+      list-style: none; }
+  .side-nav .panel .panel-collapse {
+    padding-bottom: 1.5rem; }
+    .side-nav .panel .panel-collapse li {
+      padding-top: 1.5rem; }
+      .side-nav .panel .panel-collapse li:first-of-type {
+        padding-top: 1rem; }
+      .side-nav .panel .panel-collapse li:last-of-type {
+        padding-bottom: 2rem; }
 
 .featured-boxes {
   display: -webkit-box;
