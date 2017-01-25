@@ -7,6 +7,7 @@
 
 		<div class="row thumbnail-row big-left clearfix {{background-class}}">
 
+			{% capture thumbnail-container-classes %}col-md-6{% endcapture %}
 			{% capture image-src %}http://fillmurray.com/299/320{% endcapture %}
 			{% capture img-type %}{% endcapture %}
 			{% capture title %}Tutorial: Compelling Headlines{% endcapture %}
@@ -15,10 +16,9 @@
 			{% capture link-href %}#{% endcapture %}
 
 
-			<div class="col-md-6">
-				{% include thumbnails/thumbnail-label-left.html %}
-			</div>
+			{% include thumbnails/thumbnail-label-left.html %}
 
+			{% capture thumbnail-container-classes %}col-md-3{% endcapture %}
 			{% capture image-src %}http://fillmurray.com/284/175{% endcapture %}
 			{% capture img-type %}video{% endcapture %}
 			{% capture title %}Tutorial: Rates how to{% endcapture %}
@@ -26,10 +26,9 @@
 			{% capture link-text %}Watch This Video{% endcapture %}
 			{% capture link-href %}#{% endcapture %}
 
-			<div class="col-md-3">
-				{% include thumbnails/thumbnail-standard.html %}
-			</div>
+			{% include thumbnails/thumbnail-standard.html %}
 
+			{% capture thumbnail-container-classes %}col-md-3{% endcapture %}
 			{% capture image-src %}http://fillmurray.com/284/176{% endcapture %}
 			{% capture img-type %}video{% endcapture %}
 			{% capture title %}Cleaning Checklists{% endcapture %}
@@ -37,9 +36,7 @@
 			{% capture link-text %}Watch This Video{% endcapture %}
 			{% capture link-href %}#{% endcapture %}
 
-			<div class="col-md-3">
-				{% include thumbnails/thumbnail-standard.html %}
-			</div>
+			{% include thumbnails/thumbnail-standard.html %}
 		</div>
 
 		{% if view-more %}
